@@ -1,0 +1,264 @@
+================================================================================
+dGPredictor — ModelSEED Retraining Changes
+================================================================================
+
+Goal: Retrain dGPredictor to use all compounds from the ModelSEED biochemistry
+database (dev branch) instead of being limited to KEGG-mapped compounds. This
+expands prediction coverage from ~17,000 KEGG compounds to 27,544 ModelSEED
+compounds with complete structures, enabling dG predictions for 31,924 of the
+56,009 ModelSEED reactions (57%).
+
+
+================================================================================
+1. NEW FILES — Python source code
+================================================================================
+
+retrain_modelseed.py  (35 KB)
+    Full retraining pipeline. Loads ModelSEED compounds + reactions from the
+    dev branch, builds a compound cache, decomposes all compounds into molecular
+    fingerprints, maps the original training data from KEGG IDs to ModelSEED IDs,
+    rebuilds the feature matrix with the expanded group vocabulary, retrains
+    the BayesianRidge model, and parses ModelSEED reaction stoichiometry.
+
+    Key functions:
+      - load_modelseed_compounds()        : Load all 50 compound shard TSVs
+      - load_modelseed_reactions()        : Load all 61 reaction shard TSVs
+      - load_modelseed_structures()       : Load InChI strings (handles dev
+                                            branch 6-col format and master
+                                            branch 8-col format)
+      - build_kegg_to_modelseed_map()     : Build alias mappings
+      - parse_modelseed_pka()             : Parse ModelSEED's
+                                            "fragment:atom:value" pKa format
+      - parse_formula_to_atom_bag()       : Parse chemical formula to atom dict
+      - build_compound_cache()            : Build Compound objects WITHOUT
+                                            ChemAxon (uses ModelSEED's stored
+                                            pKa values directly)
+      - decompose_all_compounds()         : RDKit fingerprinting at given
+                                            radius, filters out incomplete
+                                            structures (containing *)
+      - load_training_reactions_from_mat(): Load 4001 training reactions from
+                                            component_contribution_python.mat
+                                            and map KEGG cpds → ModelSEED cpds
+      - build_feature_matrix()            : Memory-efficient feature builder
+                                            (caches per-compound vectors,
+                                            avoids huge intermediate DataFrame)
+      - retrain_model()                   : BayesianRidge fit with same
+                                            hyperparameters as original
+      - parse_modelseed_stoichiometry()   : Parse ModelSEED stoichiometry
+                                            column format
+      - predict_all_reactions()           : Optional bulk prediction step
+
+    CLI usage:
+      python retrain_modelseed.py --modelseed_dir ../ModelSEEDDatabase
+      python retrain_modelseed.py --modelseed_dir ../ModelSEEDDatabase --skip_predict
+
+dg_prediction_modelseed.py  (15 KB)
+    New ModelSEEDdGPredictor class — analogue of the existing dGPredictor
+    class, but uses ModelSEED IDs (cpd#####, rxn#####) natively. Loads the
+    retrained model and exposes prediction methods.
+
+    Methods:
+      - predict_reaction(rxn_id, pH, I, T)         : By ModelSEED rxn ID
+      - predict_from_equation(equation_str, ...)   : From "1 cpd00001 + ..." str
+      - predict_from_smiles(equation_str, ...)     : From SMILES strings (does
+                                                     on-the-fly decomposition)
+      - predict_all(pH, I, T)                       : All 31,924 feasible rxns
+      - get_predictable_reactions()                 : List of rxn_ids that can
+                                                      be predicted
+      - can_predict(rxn_id)                         : Check if predictable
+
+    Key optimizations:
+      - Per-compound vector caching (instead of building one giant
+        n_groups × n_compounds DataFrame in memory).
+      - Group name → index dicts for O(1) lookup.
+
+    CLI usage:
+      python dg_prediction_modelseed.py                          # status
+      python dg_prediction_modelseed.py --rxn rxn00001
+      python dg_prediction_modelseed.py --equation "1 cpd00001 + 1 cpd00012 <=> 2 cpd00009"
+      python dg_prediction_modelseed.py --all --output predictions.json
+
+
+================================================================================
+2. NEW FILES — Generated data
+================================================================================
+
+data/modelseed_compounds.csv  (3.0 MB, 32,647 rows)
+    Compound SMILES table extracted from ModelSEED dev branch
+    compound_*.tsv shards. Columns: id, smiles, formula, charge.
+
+data/kegg_to_modelseed_compound_map.json
+    Dict mapping KEGG compound IDs (C#####) to ModelSEED compound IDs
+    (cpd#####), built from
+    ModelSEEDDatabase/Biochemistry/Aliases/Unique_ModelSEED_Compound_Aliases.txt
+    Used to translate the original 4001 training reactions to ModelSEED.
+    17,625 entries.
+
+data/modelseed_decompose_r1.json  (4.9 MB)
+    Radius-1 molecular fingerprint decompositions for 27,544 compounds.
+    Format: {cpd_id: {smiles_substructure: count, ...}}
+
+data/modelseed_decompose_r2.json  (11 MB)
+    Radius-2 molecular fingerprint decompositions for 27,544 compounds.
+    Same format as r1.
+
+data/modelseed_group_names_r1.txt  (24 KB)
+    Sorted list of all unique radius-1 substructures (the new group
+    vocabulary). 2,383 groups vs. 1,434 in the original group_names_r1.txt.
+
+data/modelseed_group_names_r2.txt  (699 KB)
+    Sorted list of all unique radius-2 substructures. 36,759 groups vs.
+    24,881 in the original group_names_r2_py3_modified_manual.txt.
+
+data/modelseed_reaction_stoich.json  (5.0 MB)
+    Reaction stoichiometry dict for 55,999 ModelSEED reactions.
+    Format: {rxn_id: {cpd_id: stoichiometric_coefficient, ...}}
+    10 reactions skipped because their stoichiometry column was empty/null.
+
+data/modelseed_training.mat  (1.1 GB)
+    Training matrix used to retrain the model. Contains:
+      - X_comb_all : (3909, 39230) float64 — feature matrix
+      - y          : (3909, 1) float64 — experimental dG values (kJ/mol),
+                     mapped from the original component_contribution_python.mat
+                     b vector (KEGG-keyed) into ModelSEED ID space.
+
+CC/data_cc/modelseed_compounds.json.gz  (3.0 MB)
+    Compound cache (gzipped JSON) for 32,649 compounds. Each entry has:
+      database, compound_id, inchi, atom_bag, pKas, smiles_pH7, majorMSpH7,
+      nHs, zs
+    Built WITHOUT calling ChemAxon — pKa values are taken directly from
+    ModelSEED's pka/pkb columns (which were originally computed by ChemAxon
+    upstream by the ModelSEED maintainers). 12 special compounds (H+, H2,
+    metal cations, ferredoxins, etc.) have manually-defined parameters
+    matching the original Compound class behavior, with KEGG→ModelSEED ID
+    remapping (e.g. C00080 → cpd00067 for H+).
+
+
+================================================================================
+3. NEW FILES — Trained model
+================================================================================
+
+model/modelseed_M12_model_BR.pkl  (176 MB)
+    Retrained sklearn BayesianRidge model.
+      - Hyperparameters: tol=1e-6, fit_intercept=False, compute_score=True
+        (same as the original M12_model_BR.pkl).
+      - Feature dimension: 39,230 (vs 26,404 original).
+      - Training set: 3,909 reactions (vs 4,001 original; 92 reactions
+        dropped because at least one compound was not decomposable in the
+        new feature space, or had no KEGG→ModelSEED alias).
+      - Training MSE: 11.84 kJ/mol²
+      - Training R²:  0.9997
+
+    Validation against the original dGPredictor reference values
+    (from ModelSEEDDatabase/Biochemistry/Thermodynamics/dGPredictor/
+    json_files/reaction_00_dG.json):
+
+        Reaction   Original dG   New dG    |Δ|
+        rxn00001     -15.98      -15.76    0.22
+        rxn00002     -96.33      -85.97   10.36
+        rxn00003      23.88       46.68   22.80
+        rxn00010     -21.61      -18.91    2.70
+        rxn00100       3.60        0.07    3.53
+
+
+================================================================================
+4. EXISTING FILES — NOT MODIFIED
+================================================================================
+
+No existing files were edited. All original dGPredictor data, code, and the
+original model (model/M12_model_BR.pkl) remain unchanged. The new pipeline
+runs in parallel under the modelseed_ prefix.
+
+This means you can still use the original KEGG-based predictor via
+dg_prediction.py, and the new ModelSEED-based predictor via
+dg_prediction_modelseed.py.
+
+
+================================================================================
+5. KEY DESIGN DECISIONS
+================================================================================
+
+a) Bypassed ChemAxon for pKa computation
+   ModelSEED already stores ChemAxon-computed pKa values in the pka/pkb
+   columns of compound_*.tsv. The new Compound objects use these directly
+   instead of re-running cxcalc, which means the pipeline has no external
+   binary dependency.
+
+b) Filtered out incomplete structures
+   Compounds whose SMILES contains '*' (5,093 compounds) are explicitly
+   skipped before RDKit parsing. These represent generic structures with
+   attachment points (e.g. acyl-CoA fragments) that cannot be meaningfully
+   fingerprinted. Reactions involving any such compound are not predictable
+   — this is the main reason coverage is 57% rather than 100%.
+
+c) Memory-efficient feature matrix construction
+   The original approach (building a full n_groups × n_compounds DataFrame
+   then indexing) requires ~1.2 billion float cells with the new vocabulary
+   and OOMs on a 16GB machine. Replaced with on-demand per-compound vector
+   construction with caching. Build time dropped from "OOM after >20 min" to
+   ~2 seconds for the 3,909 training reactions.
+
+d) Used component_contribution_python.mat as the canonical training source
+   The mat file contains train_S (the 673 cpd × 4001 rxn stoichiometric
+   matrix) and b (the 4001 dG measurements). This is more reliable than
+   trying to match reactions in optstoic_v3_Sji_dict.json by key, because
+   the y values in Test_KEGG_all_grp.mat are not stored alongside their
+   reaction identifiers.
+
+e) Special compound ID remapping
+   The 12 special compounds with manually-defined Compound parameters
+   (H+, H2, sulfur, CO, bicarbonate, Ca²⁺, K⁺, Mg²⁺, Fe²⁺, Fe³⁺, oxidized
+   ferredoxin, reduced ferredoxin) had to be remapped from KEGG to ModelSEED
+   IDs by looking them up individually in the alias file. Important
+   corrections vs initial guesses:
+     C00087 (S)            → cpd00074  (not cpd00268)
+     C00237 (CO)           → cpd00204  (not cpd00184)
+     C00138 (red Fd)       → cpd11620  (not cpd00106)
+     C00139 (ox Fd)        → cpd11621  (not cpd00107)
+
+
+================================================================================
+6. PIPELINE STATISTICS (final run)
+================================================================================
+
+Source data (ModelSEED dev branch):
+  ModelSEED compounds loaded:        45,706
+  Compounds with SMILES:             32,647
+  Compounds with complete SMILES:    27,554  (filtered out 5,093 with *)
+  Compounds with InChI in Structures:27,498
+  Compounds with pKa data:           24,190
+
+Decomposition results:
+  Compounds successfully decomposed: 27,544  (10 RDKit parsing failures)
+  Group vocabulary (radius 1):        2,383  (vs 1,434 original)
+  Group vocabulary (radius 2):       36,759  (vs 24,881 original)
+
+Training:
+  Training reactions loaded from mat: 3,934  (4,001 - 67 unmappable cpds)
+  Training reactions featurized:      3,909  (3,934 - 25 with undecomposable cpds)
+  Feature dimensions:                39,230
+  Training MSE:                       11.84
+  Training R²:                       0.9997
+
+Prediction coverage:
+  Total ModelSEED reactions:         55,999
+  Predictable reactions:             31,924  (57.0%)
+  Unpredictable:                     24,075  (compounds w/o complete structures)
+
+
+================================================================================
+7. HOW TO USE
+================================================================================
+
+Re-run the pipeline (e.g., after a ModelSEEDDatabase update):
+    python retrain_modelseed.py --modelseed_dir ../ModelSEEDDatabase --skip_predict
+
+Use the predictor in code:
+    from dg_prediction_modelseed import ModelSEEDdGPredictor
+    predictor = ModelSEEDdGPredictor()
+    dG, std = predictor.predict_reaction('rxn00001', pH=7.0, I=0.25)
+    results = predictor.predict_all(pH=7.0, I=0.25)  # all 31,924 reactions
+
+Use the predictor from CLI:
+    python dg_prediction_modelseed.py --rxn rxn00001
+    python dg_prediction_modelseed.py --all --output predictions.json

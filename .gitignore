@@ -1,3 +1,4 @@
-model/M12_model_BR.pkl
+*/*.pkl
+*/*.mat
 .DS_Store
 __pycache__/

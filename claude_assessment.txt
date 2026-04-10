@@ -1,0 +1,123 @@
+The Coverage Gap                                                                                                                                                                                
+                                                                                                                                                                                                  
+  ┌─────────────────────────────┬───────────┬─────────────┐                                                                                                                                       
+  │          Database           │ Compounds │ With SMILES │                                                                                                                                       
+  ├─────────────────────────────┼───────────┼─────────────┤                                                                                                                                       
+  │ ModelSEED                   │ 33,992    │ 28,121      │
+  ├─────────────────────────────┼───────────┼─────────────┤
+  │ dGPredictor (KEGG cache)    │ 17,073    │ 17,073      │                                                                                                                                       
+  ├─────────────────────────────┼───────────┼─────────────┤                                                                                                                                       
+  │ eQuilibrator (via MetaNetX) │ 20,828    │ 20,828      │                                                                                                                                       
+  └─────────────────────────────┴───────────┴─────────────┘                                                                                                                                       
+                                                                  
+  So there are ~11,000+ ModelSEED compounds with structures that dGPredictor has never seen, and ~7,000+ that eQuilibrator can't cover either. Any reaction involving those compounds currently   
+  returns no prediction.
+                                                                                                                                                                                                  
+  How These Methods Work (and Why the Gap Matters)                                                                                                                                                
+  
+  Both methods use a group contribution approach:                                                                                                                                                 
+                                                                  
+  1. Decompose each compound's structure (SMILES) into molecular subgroups (atom-centered fragments at radius 1 and radius 2)                                                                     
+  2. Build a reaction feature vector = sum of (stoichiometry × group counts) across all reactants/products
+  3. Predict dG from the feature vector using a trained linear model                                                                                                                              
+                                                                                                                                                                                                  
+  The critical insight: the model doesn't need to have been trained on a specific compound to predict its reactions — it only needs to be able to decompose the compound into known groups. The   
+  model learns group-level energy contributions, not compound-level ones.                                                                                                                         
+                                                                                                                                                                                                  
+  So there are actually two distinct problems:                                                                                                                                                    
+  
+  Problem A: Compound decomposition coverage                                                                                                                                                      
+                                                                  
+  The compound must have a SMILES string and be decomposable into molecular fingerprints. This is purely structural — no experimental data needed.                                                
+  
+  Problem B: Group coverage                                                                                                                                                                       
+                                                                  
+  If a new compound introduces subgroups (molecular signatures) that were never seen in any training compound, the model has no learned coefficient for those groups. This means the energy       
+  contribution of that novel subgroup would be treated as zero.   
+                                                                                                                                                                                                  
+  ---                                                                                                                                                                                             
+  Concrete Steps to Retrain dGPredictor with All ModelSEED Compounds
+                                                                                                                                                                                                  
+  Step 1: Build a new compound database from ModelSEED            
+                                                                                                                                                                                                  
+  Replace the KEGG-only cache_compounds_20160818.csv with all ModelSEED compounds that have SMILES. The current pipeline in decompose_groups.py just needs a {compound_id: smiles} dict. ModelSEED
+   compounds.tsv has the smiles column (col 20) and id column (col 1).                                                                                                                            
+                                                                                                                                                                                                  
+  You also need to build a new CompoundCacher dataset (the CC/data_cc/ files) so the pH/ionic-strength correction (transform_pH7) works for the new compounds. This requires InChI strings and pKa
+   values — ModelSEED compounds.tsv has pka and pkb columns, and Structures/ has InChI strings.
+                                                                                                                                                                                                  
+  Step 2: Decompose all ModelSEED compounds                       
+
+  Run count_substructures() at radius 1 and radius 2 for all ~28,121 SMILES. This produces new decompose_vector JSON files indexed by ModelSEED ID (cpd#####) instead of KEGG ID (C#####).        
+  
+  This will likely produce new molecular subgroups not in the current group_names_r1.txt / group_names_r2.txt. The group name files must be regenerated from the union of all subgroups seen.     
+                                                                  
+  Step 3: Build new reaction rules                                                                                                                                                                
+                                                                  
+  Convert ModelSEED reactions.tsv stoichiometry into the same format as optstoic_v3_Sji_dict.json — a dict of {rxn_id: {cpd_id: stoichiometry, ...}}. ModelSEED reactions already use cpd#####    
+  IDs, so this is straightforward from the stoichiometry or equation column.
+                                                                                                                                                                                                  
+  Step 4: Retrain the model                                       
+
+  The training data (Test_KEGG_all_grp.mat) contains:
+  - y: experimental dG values for ~4,001 reactions
+  - X_comb_all: feature matrix (group change vectors)                                                                                                                                             
+  
+  You need to:                                                                                                                                                                                    
+  1. Map the training reactions from KEGG IDs to ModelSEED IDs using the alias files (Unique_ModelSEED_Compound_Aliases.txt maps cpd##### ↔ KEGG C#####)
+  2. Rebuild the feature matrix X using the new (expanded) group vocabulary — the feature dimensions will change because new groups were discovered                                               
+  3. Keep the same y values — these are experimental measurements, they don't change                                                               
+  4. Retrain BayesianRidge(tol=1e-6, fit_intercept=False) on the new X, y                                                                                                                         
+                                                                                                                                                                                                  
+  The model coefficients now cover the expanded group space, and any ModelSEED reaction whose compounds decompose into known groups can be predicted.                                             
+                                                                                                                                                                                                  
+  Step 5: Update the prediction pipeline                                                                                                                                                          
+                                                                                                                                                                                                  
+  dg_prediction.py loads four things that all need updating:                                                                                                                                      
+  - db_smiles → new ModelSEED SMILES lookup (keyed by cpd##### IDs)
+  - mol_sig_r1, mol_sig_r2 → new decomposition vectors                                                                                                                                            
+  - model → retrained .pkl file                                   
+  - CompoundCacher → new cache with ModelSEED pKa/InChI data                                                                                                                                      
+                                                                                                                                                                                                  
+  ---                                                                                                                                                                                             
+  Retraining eQuilibrator                                                                                                                                                                         
+                                                                                                                                                                                                  
+  eQuilibrator's equilibrator-api uses its own internal compound cache indexed by MetaNetX identifiers. The script Retrieve_eQuilibrator_Compound_Energies.py looks up compounds via
+  ccache.get_compound using MetaNetX IDs.                                                                                                                                                         
+  
+  There are two approaches:                                                                                                                                                                       
+                                                                  
+  Option A: Extend eQuilibrator's cache (harder)
+
+  The equilibrator-api package uses a SQLite/PostgreSQL cache. You'd need to:                                                                                                                     
+  1. Add the ~7,000 missing ModelSEED compounds (those without MetaNetX IDs) to eQuilibrator's internal cache with their InChI strings
+  2. This requires running eQuilibrator's group decomposition on each new compound                                                                                                                
+  3. The eQuilibrator codebase (equilibrator-cache, component-contribution) is open source but complex to modify
+                                                                                                                                                                                                  
+  Option B: Use dGPredictor as the unified predictor (recommended)                                                                                                                                
+                                                                                                                                                                                                  
+  Since dGPredictor and eQuilibrator use fundamentally the same approach (group contribution + linear model), and dGPredictor's code is right here and modifiable, the most practical path is:    
+  1. Retrain dGPredictor with all ModelSEED structures (steps above)                                                                                                                              
+  2. Use the eQuilibrator experimental training data (which is in component_contribution_python.mat) to augment dGPredictor's training set                                                        
+  3. This gives you a single predictor that covers all ModelSEED compounds natively                                                       
+                                                                                                                                                                                                  
+  ---                                                                                                                                                                                             
+  Summary of What Needs to Happen                                                                                                                                                                 
+                                                                                                                                                                                                  
+  ┌─────────────────────────────────┬──────────────────────────────────────────┬────────────────────────────────────────────┬───────────────────────────────────┐
+  │              Step               │                  Input                   │                   Output                   │           Key Challenge           │                                 
+  ├─────────────────────────────────┼──────────────────────────────────────────┼────────────────────────────────────────────┼───────────────────────────────────┤
+  │ 1. Extract ModelSEED structures │ compounds.tsv + Structures/              │ SMILES dict + compound cache               │ Handling pKa format differences   │                                 
+  ├─────────────────────────────────┼──────────────────────────────────────────┼────────────────────────────────────────────┼───────────────────────────────────┤
+  │ 2. Decompose compounds          │ SMILES dict                              │ decompose_vector_*.json (by cpd ID)        │ New groups expand feature space   │                                 
+  ├─────────────────────────────────┼──────────────────────────────────────────┼────────────────────────────────────────────┼───────────────────────────────────┤                                 
+  │ 3. Build reaction rules         │ reactions.tsv stoichiometry              │ reaction_rule.csv (by rxn ID)              │ Parsing ModelSEED equation format │                                 
+  ├─────────────────────────────────┼──────────────────────────────────────────┼────────────────────────────────────────────┼───────────────────────────────────┤                                 
+  │ 4. Map training data            │ KEGG→ModelSEED aliases + experimental dG │ New X, y matrices                          │ ID mapping between databases      │
+  ├─────────────────────────────────┼──────────────────────────────────────────┼────────────────────────────────────────────┼───────────────────────────────────┤                                 
+  │ 5. Retrain model                │ New X, y                                 │ M12_model_BR.pkl                           │ Feature dimension change          │
+  ├─────────────────────────────────┼──────────────────────────────────────────┼────────────────────────────────────────────┼───────────────────────────────────┤                                 
+  │ 6. Update prediction pipeline   │ All of the above                         │ Working predictions for all ModelSEED rxns │ End-to-end integration            │
+  └─────────────────────────────────┴──────────────────────────────────────────┴────────────────────────────────────────────┴───────────────────────────────────┘                                 
+                                                                  
+  Would you like me to start building this retraining pipeline?
