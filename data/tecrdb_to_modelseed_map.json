@@ -1,0 +1,4296 @@
+{
+  "_summary": {
+    "n_tecrdb_compounds": 608,
+    "mapped_total": 607,
+    "unmapped_total": 1,
+    "by_method": {
+      "via_alias": 605,
+      "via_inchikey": 2,
+      "via_name": 0,
+      "unmapped": 1
+    },
+    "unmapped_list": [
+      [
+        "C80069",
+        "S-aminomethyldihydro--lipoate"
+      ]
+    ]
+  },
+  "mappings": {
+    "C00001": {
+      "modelseed_ids": [
+        "cpd00001"
+      ],
+      "primary": "cpd00001",
+      "method": "kegg_alias"
+    },
+    "C00002": {
+      "modelseed_ids": [
+        "cpd00002"
+      ],
+      "primary": "cpd00002",
+      "method": "kegg_alias"
+    },
+    "C00003": {
+      "modelseed_ids": [
+        "cpd00003"
+      ],
+      "primary": "cpd00003",
+      "method": "kegg_alias"
+    },
+    "C00004": {
+      "modelseed_ids": [
+        "cpd00004"
+      ],
+      "primary": "cpd00004",
+      "method": "kegg_alias"
+    },
+    "C00005": {
+      "modelseed_ids": [
+        "cpd00005"
+      ],
+      "primary": "cpd00005",
+      "method": "kegg_alias"
+    },
+    "C00006": {
+      "modelseed_ids": [
+        "cpd00006"
+      ],
+      "primary": "cpd00006",
+      "method": "kegg_alias"
+    },
+    "C00007": {
+      "modelseed_ids": [
+        "cpd00007"
+      ],
+      "primary": "cpd00007",
+      "method": "kegg_alias"
+    },
+    "C00008": {
+      "modelseed_ids": [
+        "cpd00008"
+      ],
+      "primary": "cpd00008",
+      "method": "kegg_alias"
+    },
+    "C00009": {
+      "modelseed_ids": [
+        "cpd00009"
+      ],
+      "primary": "cpd00009",
+      "method": "kegg_alias"
+    },
+    "C00010": {
+      "modelseed_ids": [
+        "cpd00010"
+      ],
+      "primary": "cpd00010",
+      "method": "kegg_alias"
+    },
+    "C00013": {
+      "modelseed_ids": [
+        "cpd00012"
+      ],
+      "primary": "cpd00012",
+      "method": "kegg_alias"
+    },
+    "C00014": {
+      "modelseed_ids": [
+        "cpd00013",
+        "cpd19013"
+      ],
+      "primary": "cpd00013",
+      "method": "kegg_alias"
+    },
+    "C00015": {
+      "modelseed_ids": [
+        "cpd00014"
+      ],
+      "primary": "cpd00014",
+      "method": "kegg_alias"
+    },
+    "C00016": {
+      "modelseed_ids": [
+        "cpd00015"
+      ],
+      "primary": "cpd00015",
+      "method": "kegg_alias"
+    },
+    "C00019": {
+      "modelseed_ids": [
+        "cpd00017"
+      ],
+      "primary": "cpd00017",
+      "method": "kegg_alias"
+    },
+    "C00020": {
+      "modelseed_ids": [
+        "cpd00018"
+      ],
+      "primary": "cpd00018",
+      "method": "kegg_alias"
+    },
+    "C00021": {
+      "modelseed_ids": [
+        "cpd00019"
+      ],
+      "primary": "cpd00019",
+      "method": "kegg_alias"
+    },
+    "C00022": {
+      "modelseed_ids": [
+        "cpd00020"
+      ],
+      "primary": "cpd00020",
+      "method": "kegg_alias"
+    },
+    "C00024": {
+      "modelseed_ids": [
+        "cpd00022"
+      ],
+      "primary": "cpd00022",
+      "method": "kegg_alias"
+    },
+    "C00025": {
+      "modelseed_ids": [
+        "cpd00023"
+      ],
+      "primary": "cpd00023",
+      "method": "kegg_alias"
+    },
+    "C00026": {
+      "modelseed_ids": [
+        "cpd00024"
+      ],
+      "primary": "cpd00024",
+      "method": "kegg_alias"
+    },
+    "C00027": {
+      "modelseed_ids": [
+        "cpd00025"
+      ],
+      "primary": "cpd00025",
+      "method": "kegg_alias"
+    },
+    "C00029": {
+      "modelseed_ids": [
+        "cpd00026"
+      ],
+      "primary": "cpd00026",
+      "method": "kegg_alias"
+    },
+    "C00031": {
+      "modelseed_ids": [
+        "cpd00027"
+      ],
+      "primary": "cpd00027",
+      "method": "kegg_alias"
+    },
+    "C00033": {
+      "modelseed_ids": [
+        "cpd00029"
+      ],
+      "primary": "cpd00029",
+      "method": "kegg_alias"
+    },
+    "C00035": {
+      "modelseed_ids": [
+        "cpd00031"
+      ],
+      "primary": "cpd00031",
+      "method": "kegg_alias"
+    },
+    "C00036": {
+      "modelseed_ids": [
+        "cpd00032"
+      ],
+      "primary": "cpd00032",
+      "method": "kegg_alias"
+    },
+    "C00037": {
+      "modelseed_ids": [
+        "cpd00033"
+      ],
+      "primary": "cpd00033",
+      "method": "kegg_alias"
+    },
+    "C00041": {
+      "modelseed_ids": [
+        "cpd00035"
+      ],
+      "primary": "cpd00035",
+      "method": "kegg_alias"
+    },
+    "C00042": {
+      "modelseed_ids": [
+        "cpd00036"
+      ],
+      "primary": "cpd00036",
+      "method": "kegg_alias"
+    },
+    "C00043": {
+      "modelseed_ids": [
+        "cpd00037"
+      ],
+      "primary": "cpd00037",
+      "method": "kegg_alias"
+    },
+    "C00044": {
+      "modelseed_ids": [
+        "cpd00038"
+      ],
+      "primary": "cpd00038",
+      "method": "kegg_alias"
+    },
+    "C00047": {
+      "modelseed_ids": [
+        "cpd00039"
+      ],
+      "primary": "cpd00039",
+      "method": "kegg_alias"
+    },
+    "C00048": {
+      "modelseed_ids": [
+        "cpd00040"
+      ],
+      "primary": "cpd00040",
+      "method": "kegg_alias"
+    },
+    "C00049": {
+      "modelseed_ids": [
+        "cpd00041"
+      ],
+      "primary": "cpd00041",
+      "method": "kegg_alias"
+    },
+    "C00051": {
+      "modelseed_ids": [
+        "cpd00042"
+      ],
+      "primary": "cpd00042",
+      "method": "kegg_alias"
+    },
+    "C00052": {
+      "modelseed_ids": [
+        "cpd00043"
+      ],
+      "primary": "cpd00043",
+      "method": "kegg_alias"
+    },
+    "C00055": {
+      "modelseed_ids": [
+        "cpd00046"
+      ],
+      "primary": "cpd00046",
+      "method": "kegg_alias"
+    },
+    "C00058": {
+      "modelseed_ids": [
+        "cpd00047"
+      ],
+      "primary": "cpd00047",
+      "method": "kegg_alias"
+    },
+    "C00059": {
+      "modelseed_ids": [
+        "cpd00048"
+      ],
+      "primary": "cpd00048",
+      "method": "kegg_alias"
+    },
+    "C00061": {
+      "modelseed_ids": [
+        "cpd00050"
+      ],
+      "primary": "cpd00050",
+      "method": "kegg_alias"
+    },
+    "C00062": {
+      "modelseed_ids": [
+        "cpd00051"
+      ],
+      "primary": "cpd00051",
+      "method": "kegg_alias"
+    },
+    "C00063": {
+      "modelseed_ids": [
+        "cpd00052"
+      ],
+      "primary": "cpd00052",
+      "method": "kegg_alias"
+    },
+    "C00064": {
+      "modelseed_ids": [
+        "cpd00053"
+      ],
+      "primary": "cpd00053",
+      "method": "kegg_alias"
+    },
+    "C00065": {
+      "modelseed_ids": [
+        "cpd00054"
+      ],
+      "primary": "cpd00054",
+      "method": "kegg_alias"
+    },
+    "C00067": {
+      "modelseed_ids": [
+        "cpd00055"
+      ],
+      "primary": "cpd00055",
+      "method": "kegg_alias"
+    },
+    "C00073": {
+      "modelseed_ids": [
+        "cpd00060"
+      ],
+      "primary": "cpd00060",
+      "method": "kegg_alias"
+    },
+    "C00074": {
+      "modelseed_ids": [
+        "cpd00061"
+      ],
+      "primary": "cpd00061",
+      "method": "kegg_alias"
+    },
+    "C00075": {
+      "modelseed_ids": [
+        "cpd00062"
+      ],
+      "primary": "cpd00062",
+      "method": "kegg_alias"
+    },
+    "C00077": {
+      "modelseed_ids": [
+        "cpd00064"
+      ],
+      "primary": "cpd00064",
+      "method": "kegg_alias"
+    },
+    "C00078": {
+      "modelseed_ids": [
+        "cpd00065"
+      ],
+      "primary": "cpd00065",
+      "method": "kegg_alias"
+    },
+    "C00079": {
+      "modelseed_ids": [
+        "cpd00066"
+      ],
+      "primary": "cpd00066",
+      "method": "kegg_alias"
+    },
+    "C00080": {
+      "modelseed_ids": [
+        "cpd00067"
+      ],
+      "primary": "cpd00067",
+      "method": "kegg_alias"
+    },
+    "C00081": {
+      "modelseed_ids": [
+        "cpd00068"
+      ],
+      "primary": "cpd00068",
+      "method": "kegg_alias"
+    },
+    "C00082": {
+      "modelseed_ids": [
+        "cpd00069"
+      ],
+      "primary": "cpd00069",
+      "method": "kegg_alias"
+    },
+    "C00083": {
+      "modelseed_ids": [
+        "cpd00070"
+      ],
+      "primary": "cpd00070",
+      "method": "kegg_alias"
+    },
+    "C00084": {
+      "modelseed_ids": [
+        "cpd00071"
+      ],
+      "primary": "cpd00071",
+      "method": "kegg_alias"
+    },
+    "C00085": {
+      "modelseed_ids": [
+        "cpd00072"
+      ],
+      "primary": "cpd00072",
+      "method": "kegg_alias"
+    },
+    "C00086": {
+      "modelseed_ids": [
+        "cpd00073"
+      ],
+      "primary": "cpd00073",
+      "method": "kegg_alias"
+    },
+    "C00089": {
+      "modelseed_ids": [
+        "cpd00076"
+      ],
+      "primary": "cpd00076",
+      "method": "kegg_alias"
+    },
+    "C00091": {
+      "modelseed_ids": [
+        "cpd00078"
+      ],
+      "primary": "cpd00078",
+      "method": "kegg_alias"
+    },
+    "C00092": {
+      "modelseed_ids": [
+        "cpd00079",
+        "cpd26836"
+      ],
+      "primary": "cpd00079",
+      "method": "kegg_alias"
+    },
+    "C00093": {
+      "modelseed_ids": [
+        "cpd00080"
+      ],
+      "primary": "cpd00080",
+      "method": "kegg_alias"
+    },
+    "C00095": {
+      "modelseed_ids": [
+        "cpd00082",
+        "cpd19102",
+        "cpd27040"
+      ],
+      "primary": "cpd00082",
+      "method": "kegg_alias"
+    },
+    "C00096": {
+      "modelseed_ids": [
+        "cpd00083"
+      ],
+      "primary": "cpd00083",
+      "method": "kegg_alias"
+    },
+    "C00099": {
+      "modelseed_ids": [
+        "cpd00085"
+      ],
+      "primary": "cpd00085",
+      "method": "kegg_alias"
+    },
+    "C00100": {
+      "modelseed_ids": [
+        "cpd00086"
+      ],
+      "primary": "cpd00086",
+      "method": "kegg_alias"
+    },
+    "C00101": {
+      "modelseed_ids": [
+        "cpd00087"
+      ],
+      "primary": "cpd00087",
+      "method": "kegg_alias"
+    },
+    "C00103": {
+      "modelseed_ids": [
+        "cpd00089"
+      ],
+      "primary": "cpd00089",
+      "method": "kegg_alias"
+    },
+    "C00104": {
+      "modelseed_ids": [
+        "cpd00090"
+      ],
+      "primary": "cpd00090",
+      "method": "kegg_alias"
+    },
+    "C00105": {
+      "modelseed_ids": [
+        "cpd00091"
+      ],
+      "primary": "cpd00091",
+      "method": "kegg_alias"
+    },
+    "C00106": {
+      "modelseed_ids": [
+        "cpd00092"
+      ],
+      "primary": "cpd00092",
+      "method": "kegg_alias"
+    },
+    "C00108": {
+      "modelseed_ids": [
+        "cpd00093"
+      ],
+      "primary": "cpd00093",
+      "method": "kegg_alias"
+    },
+    "C00109": {
+      "modelseed_ids": [
+        "cpd00094"
+      ],
+      "primary": "cpd00094",
+      "method": "kegg_alias"
+    },
+    "C00111": {
+      "modelseed_ids": [
+        "cpd00095"
+      ],
+      "primary": "cpd00095",
+      "method": "kegg_alias"
+    },
+    "C00112": {
+      "modelseed_ids": [
+        "cpd00096"
+      ],
+      "primary": "cpd00096",
+      "method": "kegg_alias"
+    },
+    "C00114": {
+      "modelseed_ids": [
+        "cpd00098"
+      ],
+      "primary": "cpd00098",
+      "method": "kegg_alias"
+    },
+    "C00116": {
+      "modelseed_ids": [
+        "cpd00100"
+      ],
+      "primary": "cpd00100",
+      "method": "kegg_alias"
+    },
+    "C00117": {
+      "modelseed_ids": [
+        "cpd00101"
+      ],
+      "primary": "cpd00101",
+      "method": "kegg_alias"
+    },
+    "C00118": {
+      "modelseed_ids": [
+        "cpd00102"
+      ],
+      "primary": "cpd00102",
+      "method": "kegg_alias"
+    },
+    "C00119": {
+      "modelseed_ids": [
+        "cpd00103"
+      ],
+      "primary": "cpd00103",
+      "method": "kegg_alias"
+    },
+    "C00121": {
+      "modelseed_ids": [
+        "cpd00105"
+      ],
+      "primary": "cpd00105",
+      "method": "kegg_alias"
+    },
+    "C00122": {
+      "modelseed_ids": [
+        "cpd00106"
+      ],
+      "primary": "cpd00106",
+      "method": "kegg_alias"
+    },
+    "C00123": {
+      "modelseed_ids": [
+        "cpd00107"
+      ],
+      "primary": "cpd00107",
+      "method": "kegg_alias"
+    },
+    "C00124": {
+      "modelseed_ids": [
+        "cpd00108"
+      ],
+      "primary": "cpd00108",
+      "method": "kegg_alias"
+    },
+    "C00125": {
+      "modelseed_ids": [
+        "cpd00109"
+      ],
+      "primary": "cpd00109",
+      "method": "kegg_alias"
+    },
+    "C00126": {
+      "modelseed_ids": [
+        "cpd00110"
+      ],
+      "primary": "cpd00110",
+      "method": "kegg_alias"
+    },
+    "C00127": {
+      "modelseed_ids": [
+        "cpd00111"
+      ],
+      "primary": "cpd00111",
+      "method": "kegg_alias"
+    },
+    "C00129": {
+      "modelseed_ids": [
+        "cpd00113"
+      ],
+      "primary": "cpd00113",
+      "method": "kegg_alias"
+    },
+    "C00130": {
+      "modelseed_ids": [
+        "cpd00114"
+      ],
+      "primary": "cpd00114",
+      "method": "kegg_alias"
+    },
+    "C00131": {
+      "modelseed_ids": [
+        "cpd00115"
+      ],
+      "primary": "cpd00115",
+      "method": "kegg_alias"
+    },
+    "C00133": {
+      "modelseed_ids": [
+        "cpd00117"
+      ],
+      "primary": "cpd00117",
+      "method": "kegg_alias"
+    },
+    "C00135": {
+      "modelseed_ids": [
+        "cpd00119"
+      ],
+      "primary": "cpd00119",
+      "method": "kegg_alias"
+    },
+    "C00137": {
+      "modelseed_ids": [
+        "cpd00121"
+      ],
+      "primary": "cpd00121",
+      "method": "kegg_alias"
+    },
+    "C00140": {
+      "modelseed_ids": [
+        "cpd00122",
+        "cpd27608"
+      ],
+      "primary": "cpd00122",
+      "method": "kegg_alias"
+    },
+    "C00143": {
+      "modelseed_ids": [
+        "cpd00125"
+      ],
+      "primary": "cpd00125",
+      "method": "kegg_alias"
+    },
+    "C00144": {
+      "modelseed_ids": [
+        "cpd00126"
+      ],
+      "primary": "cpd00126",
+      "method": "kegg_alias"
+    },
+    "C00146": {
+      "modelseed_ids": [
+        "cpd00127"
+      ],
+      "primary": "cpd00127",
+      "method": "kegg_alias"
+    },
+    "C00147": {
+      "modelseed_ids": [
+        "cpd00128"
+      ],
+      "primary": "cpd00128",
+      "method": "kegg_alias"
+    },
+    "C00148": {
+      "modelseed_ids": [
+        "cpd00129"
+      ],
+      "primary": "cpd00129",
+      "method": "kegg_alias"
+    },
+    "C00149": {
+      "modelseed_ids": [
+        "cpd00130"
+      ],
+      "primary": "cpd00130",
+      "method": "kegg_alias"
+    },
+    "C00152": {
+      "modelseed_ids": [
+        "cpd00132"
+      ],
+      "primary": "cpd00132",
+      "method": "kegg_alias"
+    },
+    "C00153": {
+      "modelseed_ids": [
+        "cpd00133"
+      ],
+      "primary": "cpd00133",
+      "method": "kegg_alias"
+    },
+    "C00154": {
+      "modelseed_ids": [
+        "cpd00134"
+      ],
+      "primary": "cpd00134",
+      "method": "kegg_alias"
+    },
+    "C00155": {
+      "modelseed_ids": [
+        "cpd00135"
+      ],
+      "primary": "cpd00135",
+      "method": "kegg_alias"
+    },
+    "C00156": {
+      "modelseed_ids": [
+        "cpd00136"
+      ],
+      "primary": "cpd00136",
+      "method": "kegg_alias"
+    },
+    "C00158": {
+      "modelseed_ids": [
+        "cpd00137"
+      ],
+      "primary": "cpd00137",
+      "method": "kegg_alias"
+    },
+    "C00159": {
+      "modelseed_ids": [
+        "cpd00138"
+      ],
+      "primary": "cpd00138",
+      "method": "kegg_alias"
+    },
+    "C00160": {
+      "modelseed_ids": [
+        "cpd00139"
+      ],
+      "primary": "cpd00139",
+      "method": "kegg_alias"
+    },
+    "C00163": {
+      "modelseed_ids": [
+        "cpd00141"
+      ],
+      "primary": "cpd00141",
+      "method": "kegg_alias"
+    },
+    "C00164": {
+      "modelseed_ids": [
+        "cpd00142"
+      ],
+      "primary": "cpd00142",
+      "method": "kegg_alias"
+    },
+    "C00166": {
+      "modelseed_ids": [
+        "cpd00143"
+      ],
+      "primary": "cpd00143",
+      "method": "kegg_alias"
+    },
+    "C00167": {
+      "modelseed_ids": [
+        "cpd00144"
+      ],
+      "primary": "cpd00144",
+      "method": "kegg_alias"
+    },
+    "C00168": {
+      "modelseed_ids": [
+        "cpd00145"
+      ],
+      "primary": "cpd00145",
+      "method": "kegg_alias"
+    },
+    "C00169": {
+      "modelseed_ids": [
+        "cpd00146"
+      ],
+      "primary": "cpd00146",
+      "method": "kegg_alias"
+    },
+    "C00170": {
+      "modelseed_ids": [
+        "cpd00147"
+      ],
+      "primary": "cpd00147",
+      "method": "kegg_alias"
+    },
+    "C00178": {
+      "modelseed_ids": [
+        "cpd00151"
+      ],
+      "primary": "cpd00151",
+      "method": "kegg_alias"
+    },
+    "C00180": {
+      "modelseed_ids": [
+        "cpd00153"
+      ],
+      "primary": "cpd00153",
+      "method": "kegg_alias"
+    },
+    "C00181": {
+      "modelseed_ids": [
+        "cpd00154"
+      ],
+      "primary": "cpd00154",
+      "method": "kegg_alias"
+    },
+    "C00183": {
+      "modelseed_ids": [
+        "cpd00156"
+      ],
+      "primary": "cpd00156",
+      "method": "kegg_alias"
+    },
+    "C00184": {
+      "modelseed_ids": [
+        "cpd00157"
+      ],
+      "primary": "cpd00157",
+      "method": "kegg_alias"
+    },
+    "C00185": {
+      "modelseed_ids": [
+        "cpd00158"
+      ],
+      "primary": "cpd00158",
+      "method": "kegg_alias"
+    },
+    "C00186": {
+      "modelseed_ids": [
+        "cpd00159"
+      ],
+      "primary": "cpd00159",
+      "method": "kegg_alias"
+    },
+    "C00187": {
+      "modelseed_ids": [
+        "cpd00160"
+      ],
+      "primary": "cpd00160",
+      "method": "kegg_alias"
+    },
+    "C00188": {
+      "modelseed_ids": [
+        "cpd00161"
+      ],
+      "primary": "cpd00161",
+      "method": "kegg_alias"
+    },
+    "C00189": {
+      "modelseed_ids": [
+        "cpd00162"
+      ],
+      "primary": "cpd00162",
+      "method": "kegg_alias"
+    },
+    "C00190": {
+      "modelseed_ids": [
+        "cpd00163"
+      ],
+      "primary": "cpd00163",
+      "method": "kegg_alias"
+    },
+    "C00191": {
+      "modelseed_ids": [
+        "cpd00164"
+      ],
+      "primary": "cpd00164",
+      "method": "kegg_alias"
+    },
+    "C00197": {
+      "modelseed_ids": [
+        "cpd00169"
+      ],
+      "primary": "cpd00169",
+      "method": "kegg_alias"
+    },
+    "C00198": {
+      "modelseed_ids": [
+        "cpd00170"
+      ],
+      "primary": "cpd00170",
+      "method": "kegg_alias"
+    },
+    "C00199": {
+      "modelseed_ids": [
+        "cpd00171"
+      ],
+      "primary": "cpd00171",
+      "method": "kegg_alias"
+    },
+    "C00203": {
+      "modelseed_ids": [
+        "cpd00175"
+      ],
+      "primary": "cpd00175",
+      "method": "kegg_alias"
+    },
+    "C00204": {
+      "modelseed_ids": [
+        "cpd00176"
+      ],
+      "primary": "cpd00176",
+      "method": "kegg_alias"
+    },
+    "C00206": {
+      "modelseed_ids": [
+        "cpd00177"
+      ],
+      "primary": "cpd00177",
+      "method": "kegg_alias"
+    },
+    "C00207": {
+      "modelseed_ids": [
+        "cpd00178"
+      ],
+      "primary": "cpd00178",
+      "method": "kegg_alias"
+    },
+    "C00208": {
+      "modelseed_ids": [
+        "cpd00179",
+        "cpd01355"
+      ],
+      "primary": "cpd00179",
+      "method": "kegg_alias"
+    },
+    "C00212": {
+      "modelseed_ids": [
+        "cpd00182"
+      ],
+      "primary": "cpd00182",
+      "method": "kegg_alias"
+    },
+    "C00214": {
+      "modelseed_ids": [
+        "cpd00184"
+      ],
+      "primary": "cpd00184",
+      "method": "kegg_alias"
+    },
+    "C00216": {
+      "modelseed_ids": [
+        "cpd00185"
+      ],
+      "primary": "cpd00185",
+      "method": "kegg_alias"
+    },
+    "C00217": {
+      "modelseed_ids": [
+        "cpd00186"
+      ],
+      "primary": "cpd00186",
+      "method": "kegg_alias"
+    },
+    "C00219": {
+      "modelseed_ids": [
+        "cpd00188"
+      ],
+      "primary": "cpd00188",
+      "method": "kegg_alias"
+    },
+    "C00222": {
+      "modelseed_ids": [
+        "cpd00191"
+      ],
+      "primary": "cpd00191",
+      "method": "kegg_alias"
+    },
+    "C00224": {
+      "modelseed_ids": [
+        "cpd00193"
+      ],
+      "primary": "cpd00193",
+      "method": "kegg_alias"
+    },
+    "C00227": {
+      "modelseed_ids": [
+        "cpd00196"
+      ],
+      "primary": "cpd00196",
+      "method": "kegg_alias"
+    },
+    "C00229": {
+      "modelseed_ids": [
+        "cpd11493"
+      ],
+      "primary": "cpd11493",
+      "method": "kegg_alias"
+    },
+    "C00231": {
+      "modelseed_ids": [
+        "cpd00198"
+      ],
+      "primary": "cpd00198",
+      "method": "kegg_alias"
+    },
+    "C00232": {
+      "modelseed_ids": [
+        "cpd00199"
+      ],
+      "primary": "cpd00199",
+      "method": "kegg_alias"
+    },
+    "C00233": {
+      "modelseed_ids": [
+        "cpd00200"
+      ],
+      "primary": "cpd00200",
+      "method": "kegg_alias"
+    },
+    "C00234": {
+      "modelseed_ids": [
+        "cpd00201"
+      ],
+      "primary": "cpd00201",
+      "method": "kegg_alias"
+    },
+    "C00235": {
+      "modelseed_ids": [
+        "cpd00202"
+      ],
+      "primary": "cpd00202",
+      "method": "kegg_alias"
+    },
+    "C00236": {
+      "modelseed_ids": [
+        "cpd00203"
+      ],
+      "primary": "cpd00203",
+      "method": "kegg_alias"
+    },
+    "C00237": {
+      "modelseed_ids": [
+        "cpd00204"
+      ],
+      "primary": "cpd00204",
+      "method": "kegg_alias"
+    },
+    "C00239": {
+      "modelseed_ids": [
+        "cpd00206"
+      ],
+      "primary": "cpd00206",
+      "method": "kegg_alias"
+    },
+    "C00242": {
+      "modelseed_ids": [
+        "cpd00207"
+      ],
+      "primary": "cpd00207",
+      "method": "kegg_alias"
+    },
+    "C00243": {
+      "modelseed_ids": [
+        "cpd00208"
+      ],
+      "primary": "cpd00208",
+      "method": "kegg_alias"
+    },
+    "C00247": {
+      "modelseed_ids": [
+        "cpd00212"
+      ],
+      "primary": "cpd00212",
+      "method": "kegg_alias"
+    },
+    "C00248": {
+      "modelseed_ids": [
+        "cpd00213"
+      ],
+      "primary": "cpd00213",
+      "method": "kegg_alias"
+    },
+    "C00249": {
+      "modelseed_ids": [
+        "cpd00214"
+      ],
+      "primary": "cpd00214",
+      "method": "kegg_alias"
+    },
+    "C00250": {
+      "modelseed_ids": [
+        "cpd00215"
+      ],
+      "primary": "cpd00215",
+      "method": "kegg_alias"
+    },
+    "C00251": {
+      "modelseed_ids": [
+        "cpd00216"
+      ],
+      "primary": "cpd00216",
+      "method": "kegg_alias"
+    },
+    "C00252": {
+      "modelseed_ids": [
+        "cpd00217"
+      ],
+      "primary": "cpd00217",
+      "method": "kegg_alias"
+    },
+    "C00253": {
+      "modelseed_ids": [
+        "cpd00218"
+      ],
+      "primary": "cpd00218",
+      "method": "kegg_alias"
+    },
+    "C00254": {
+      "modelseed_ids": [
+        "cpd00219"
+      ],
+      "primary": "cpd00219",
+      "method": "kegg_alias"
+    },
+    "C00256": {
+      "modelseed_ids": [
+        "cpd00221"
+      ],
+      "primary": "cpd00221",
+      "method": "kegg_alias"
+    },
+    "C00257": {
+      "modelseed_ids": [
+        "cpd00222"
+      ],
+      "primary": "cpd00222",
+      "method": "kegg_alias"
+    },
+    "C00258": {
+      "modelseed_ids": [
+        "cpd00223"
+      ],
+      "primary": "cpd00223",
+      "method": "kegg_alias"
+    },
+    "C00259": {
+      "modelseed_ids": [
+        "cpd00224"
+      ],
+      "primary": "cpd00224",
+      "method": "kegg_alias"
+    },
+    "C00261": {
+      "modelseed_ids": [
+        "cpd00225"
+      ],
+      "primary": "cpd00225",
+      "method": "kegg_alias"
+    },
+    "C00262": {
+      "modelseed_ids": [
+        "cpd00226"
+      ],
+      "primary": "cpd00226",
+      "method": "kegg_alias"
+    },
+    "C00263": {
+      "modelseed_ids": [
+        "cpd00227"
+      ],
+      "primary": "cpd00227",
+      "method": "kegg_alias"
+    },
+    "C00266": {
+      "modelseed_ids": [
+        "cpd00229"
+      ],
+      "primary": "cpd00229",
+      "method": "kegg_alias"
+    },
+    "C00270": {
+      "modelseed_ids": [
+        "cpd00232",
+        "cpd27569"
+      ],
+      "primary": "cpd00232",
+      "method": "kegg_alias"
+    },
+    "C00273": {
+      "modelseed_ids": [
+        "cpd00234"
+      ],
+      "primary": "cpd00234",
+      "method": "kegg_alias"
+    },
+    "C00275": {
+      "modelseed_ids": [
+        "cpd00235"
+      ],
+      "primary": "cpd00235",
+      "method": "kegg_alias"
+    },
+    "C00279": {
+      "modelseed_ids": [
+        "cpd00236"
+      ],
+      "primary": "cpd00236",
+      "method": "kegg_alias"
+    },
+    "C00280": {
+      "modelseed_ids": [
+        "cpd00237"
+      ],
+      "primary": "cpd00237",
+      "method": "kegg_alias"
+    },
+    "C00282": {
+      "modelseed_ids": [
+        "cpd11640"
+      ],
+      "primary": "cpd11640",
+      "method": "kegg_alias"
+    },
+    "C00288": {
+      "modelseed_ids": [
+        "cpd00242"
+      ],
+      "primary": "cpd00242",
+      "method": "kegg_alias"
+    },
+    "C00294": {
+      "modelseed_ids": [
+        "cpd00246"
+      ],
+      "primary": "cpd00246",
+      "method": "kegg_alias"
+    },
+    "C00295": {
+      "modelseed_ids": [
+        "cpd00247"
+      ],
+      "primary": "cpd00247",
+      "method": "kegg_alias"
+    },
+    "C00296": {
+      "modelseed_ids": [
+        "cpd00248"
+      ],
+      "primary": "cpd00248",
+      "method": "kegg_alias"
+    },
+    "C00299": {
+      "modelseed_ids": [
+        "cpd00249"
+      ],
+      "primary": "cpd00249",
+      "method": "kegg_alias"
+    },
+    "C00300": {
+      "modelseed_ids": [
+        "cpd00250"
+      ],
+      "primary": "cpd00250",
+      "method": "kegg_alias"
+    },
+    "C00307": {
+      "modelseed_ids": [
+        "cpd00256"
+      ],
+      "primary": "cpd00256",
+      "method": "kegg_alias"
+    },
+    "C00309": {
+      "modelseed_ids": [
+        "cpd00258"
+      ],
+      "primary": "cpd00258",
+      "method": "kegg_alias"
+    },
+    "C00310": {
+      "modelseed_ids": [
+        "cpd00259"
+      ],
+      "primary": "cpd00259",
+      "method": "kegg_alias"
+    },
+    "C00311": {
+      "modelseed_ids": [
+        "cpd00260"
+      ],
+      "primary": "cpd00260",
+      "method": "kegg_alias"
+    },
+    "C00312": {
+      "modelseed_ids": [
+        "cpd00261"
+      ],
+      "primary": "cpd00261",
+      "method": "kegg_alias"
+    },
+    "C00313": {
+      "modelseed_ids": [
+        "cpd00262"
+      ],
+      "primary": "cpd00262",
+      "method": "kegg_alias"
+    },
+    "C00314": {
+      "modelseed_ids": [
+        "cpd00263"
+      ],
+      "primary": "cpd00263",
+      "method": "kegg_alias"
+    },
+    "C00318": {
+      "modelseed_ids": [
+        "cpd00266"
+      ],
+      "primary": "cpd00266",
+      "method": "kegg_alias"
+    },
+    "C00322": {
+      "modelseed_ids": [
+        "cpd00269"
+      ],
+      "primary": "cpd00269",
+      "method": "kegg_alias"
+    },
+    "C00327": {
+      "modelseed_ids": [
+        "cpd00274"
+      ],
+      "primary": "cpd00274",
+      "method": "kegg_alias"
+    },
+    "C00331": {
+      "modelseed_ids": [
+        "cpd00278"
+      ],
+      "primary": "cpd00278",
+      "method": "kegg_alias"
+    },
+    "C00332": {
+      "modelseed_ids": [
+        "cpd00279"
+      ],
+      "primary": "cpd00279",
+      "method": "kegg_alias"
+    },
+    "C00333": {
+      "modelseed_ids": [
+        "cpd00280"
+      ],
+      "primary": "cpd00280",
+      "method": "kegg_alias"
+    },
+    "C00334": {
+      "modelseed_ids": [
+        "cpd00281"
+      ],
+      "primary": "cpd00281",
+      "method": "kegg_alias"
+    },
+    "C00337": {
+      "modelseed_ids": [
+        "cpd00282"
+      ],
+      "primary": "cpd00282",
+      "method": "kegg_alias"
+    },
+    "C00342": {
+      "modelseed_ids": [
+        "cpd11421"
+      ],
+      "primary": "cpd11421",
+      "method": "kegg_alias"
+    },
+    "C00343": {
+      "modelseed_ids": [
+        "cpd11420"
+      ],
+      "primary": "cpd11420",
+      "method": "kegg_alias"
+    },
+    "C00345": {
+      "modelseed_ids": [
+        "cpd00284"
+      ],
+      "primary": "cpd00284",
+      "method": "kegg_alias"
+    },
+    "C00346": {
+      "modelseed_ids": [
+        "cpd00285"
+      ],
+      "primary": "cpd00285",
+      "method": "kegg_alias"
+    },
+    "C00349": {
+      "modelseed_ids": [
+        "cpd00287",
+        "cpd23282"
+      ],
+      "primary": "cpd00287",
+      "method": "kegg_alias"
+    },
+    "C00352": {
+      "modelseed_ids": [
+        "cpd00288"
+      ],
+      "primary": "cpd00288",
+      "method": "kegg_alias"
+    },
+    "C00354": {
+      "modelseed_ids": [
+        "cpd00290"
+      ],
+      "primary": "cpd00290",
+      "method": "kegg_alias"
+    },
+    "C00357": {
+      "modelseed_ids": [
+        "cpd00293"
+      ],
+      "primary": "cpd00293",
+      "method": "kegg_alias"
+    },
+    "C00360": {
+      "modelseed_ids": [
+        "cpd00294"
+      ],
+      "primary": "cpd00294",
+      "method": "kegg_alias"
+    },
+    "C00361": {
+      "modelseed_ids": [
+        "cpd00295"
+      ],
+      "primary": "cpd00295",
+      "method": "kegg_alias"
+    },
+    "C00362": {
+      "modelseed_ids": [
+        "cpd00296"
+      ],
+      "primary": "cpd00296",
+      "method": "kegg_alias"
+    },
+    "C00363": {
+      "modelseed_ids": [
+        "cpd00297"
+      ],
+      "primary": "cpd00297",
+      "method": "kegg_alias"
+    },
+    "C00364": {
+      "modelseed_ids": [
+        "cpd00298"
+      ],
+      "primary": "cpd00298",
+      "method": "kegg_alias"
+    },
+    "C00365": {
+      "modelseed_ids": [
+        "cpd00299"
+      ],
+      "primary": "cpd00299",
+      "method": "kegg_alias"
+    },
+    "C00366": {
+      "modelseed_ids": [
+        "cpd00300"
+      ],
+      "primary": "cpd00300",
+      "method": "kegg_alias"
+    },
+    "C00376": {
+      "modelseed_ids": [
+        "cpd00304"
+      ],
+      "primary": "cpd00304",
+      "method": "kegg_alias"
+    },
+    "C00379": {
+      "modelseed_ids": [
+        "cpd00306"
+      ],
+      "primary": "cpd00306",
+      "method": "kegg_alias"
+    },
+    "C00385": {
+      "modelseed_ids": [
+        "cpd00309"
+      ],
+      "primary": "cpd00309",
+      "method": "kegg_alias"
+    },
+    "C00387": {
+      "modelseed_ids": [
+        "cpd00311"
+      ],
+      "primary": "cpd00311",
+      "method": "kegg_alias"
+    },
+    "C00392": {
+      "modelseed_ids": [
+        "cpd00314"
+      ],
+      "primary": "cpd00314",
+      "method": "kegg_alias"
+    },
+    "C00394": {
+      "modelseed_ids": [
+        "cpd00315"
+      ],
+      "primary": "cpd00315",
+      "method": "kegg_alias"
+    },
+    "C00407": {
+      "modelseed_ids": [
+        "cpd00322"
+      ],
+      "primary": "cpd00322",
+      "method": "kegg_alias"
+    },
+    "C00408": {
+      "modelseed_ids": [
+        "cpd00323"
+      ],
+      "primary": "cpd00323",
+      "method": "kegg_alias"
+    },
+    "C00414": {
+      "modelseed_ids": [
+        "cpd00329"
+      ],
+      "primary": "cpd00329",
+      "method": "kegg_alias"
+    },
+    "C00415": {
+      "modelseed_ids": [
+        "cpd00330"
+      ],
+      "primary": "cpd00330",
+      "method": "kegg_alias"
+    },
+    "C00417": {
+      "modelseed_ids": [
+        "cpd00331"
+      ],
+      "primary": "cpd00331",
+      "method": "kegg_alias"
+    },
+    "C00423": {
+      "modelseed_ids": [
+        "cpd00333"
+      ],
+      "primary": "cpd00333",
+      "method": "kegg_alias"
+    },
+    "C00424": {
+      "modelseed_ids": [
+        "cpd00334"
+      ],
+      "primary": "cpd00334",
+      "method": "kegg_alias"
+    },
+    "C00429": {
+      "modelseed_ids": [
+        "cpd00337"
+      ],
+      "primary": "cpd00337",
+      "method": "kegg_alias"
+    },
+    "C00437": {
+      "modelseed_ids": [
+        "cpd00342"
+      ],
+      "primary": "cpd00342",
+      "method": "kegg_alias"
+    },
+    "C00438": {
+      "modelseed_ids": [
+        "cpd00343"
+      ],
+      "primary": "cpd00343",
+      "method": "kegg_alias"
+    },
+    "C00439": {
+      "modelseed_ids": [
+        "cpd00344"
+      ],
+      "primary": "cpd00344",
+      "method": "kegg_alias"
+    },
+    "C00440": {
+      "modelseed_ids": [
+        "cpd00345"
+      ],
+      "primary": "cpd00345",
+      "method": "kegg_alias"
+    },
+    "C00441": {
+      "modelseed_ids": [
+        "cpd00346"
+      ],
+      "primary": "cpd00346",
+      "method": "kegg_alias"
+    },
+    "C00445": {
+      "modelseed_ids": [
+        "cpd00347"
+      ],
+      "primary": "cpd00347",
+      "method": "kegg_alias"
+    },
+    "C00449": {
+      "modelseed_ids": [
+        "cpd00351"
+      ],
+      "primary": "cpd00351",
+      "method": "kegg_alias"
+    },
+    "C00455": {
+      "modelseed_ids": [
+        "cpd00355"
+      ],
+      "primary": "cpd00355",
+      "method": "kegg_alias"
+    },
+    "C00459": {
+      "modelseed_ids": [
+        "cpd00357"
+      ],
+      "primary": "cpd00357",
+      "method": "kegg_alias"
+    },
+    "C00463": {
+      "modelseed_ids": [
+        "cpd00359"
+      ],
+      "primary": "cpd00359",
+      "method": "kegg_alias"
+    },
+    "C00468": {
+      "modelseed_ids": [
+        "cpd00362"
+      ],
+      "primary": "cpd00362",
+      "method": "kegg_alias"
+    },
+    "C00469": {
+      "modelseed_ids": [
+        "cpd00363"
+      ],
+      "primary": "cpd00363",
+      "method": "kegg_alias"
+    },
+    "C00473": {
+      "modelseed_ids": [
+        "cpd00365"
+      ],
+      "primary": "cpd00365",
+      "method": "kegg_alias"
+    },
+    "C00474": {
+      "modelseed_ids": [
+        "cpd00366"
+      ],
+      "primary": "cpd00366",
+      "method": "kegg_alias"
+    },
+    "C00475": {
+      "modelseed_ids": [
+        "cpd00367"
+      ],
+      "primary": "cpd00367",
+      "method": "kegg_alias"
+    },
+    "C00476": {
+      "modelseed_ids": [
+        "cpd00368"
+      ],
+      "primary": "cpd00368",
+      "method": "kegg_alias"
+    },
+    "C00479": {
+      "modelseed_ids": [
+        "cpd00371"
+      ],
+      "primary": "cpd00371",
+      "method": "kegg_alias"
+    },
+    "C00482": {
+      "modelseed_ids": [
+        "cpd00373"
+      ],
+      "primary": "cpd00373",
+      "method": "kegg_alias"
+    },
+    "C00492": {
+      "modelseed_ids": [
+        "cpd00382"
+      ],
+      "primary": "cpd00382",
+      "method": "kegg_alias"
+    },
+    "C00493": {
+      "modelseed_ids": [
+        "cpd00383"
+      ],
+      "primary": "cpd00383",
+      "method": "kegg_alias"
+    },
+    "C00497": {
+      "modelseed_ids": [
+        "cpd00386"
+      ],
+      "primary": "cpd00386",
+      "method": "kegg_alias"
+    },
+    "C00498": {
+      "modelseed_ids": [
+        "cpd00387"
+      ],
+      "primary": "cpd00387",
+      "method": "kegg_alias"
+    },
+    "C00499": {
+      "modelseed_ids": [
+        "cpd00388"
+      ],
+      "primary": "cpd00388",
+      "method": "kegg_alias"
+    },
+    "C00501": {
+      "modelseed_ids": [
+        "cpd00390"
+      ],
+      "primary": "cpd00390",
+      "method": "kegg_alias"
+    },
+    "C00504": {
+      "modelseed_ids": [
+        "cpd00393"
+      ],
+      "primary": "cpd00393",
+      "method": "kegg_alias"
+    },
+    "C00507": {
+      "modelseed_ids": [
+        "cpd00396",
+        "cpd27379"
+      ],
+      "primary": "cpd00396",
+      "method": "kegg_alias"
+    },
+    "C00508": {
+      "modelseed_ids": [
+        "cpd00397"
+      ],
+      "primary": "cpd00397",
+      "method": "kegg_alias"
+    },
+    "C00515": {
+      "modelseed_ids": [
+        "cpd00404"
+      ],
+      "primary": "cpd00404",
+      "method": "kegg_alias"
+    },
+    "C00522": {
+      "modelseed_ids": [
+        "cpd00408"
+      ],
+      "primary": "cpd00408",
+      "method": "kegg_alias"
+    },
+    "C00534": {
+      "modelseed_ids": [
+        "cpd00419"
+      ],
+      "primary": "cpd00419",
+      "method": "kegg_alias"
+    },
+    "C00535": {
+      "modelseed_ids": [
+        "cpd00420"
+      ],
+      "primary": "cpd00420",
+      "method": "kegg_alias"
+    },
+    "C00536": {
+      "modelseed_ids": [
+        "cpd00421"
+      ],
+      "primary": "cpd00421",
+      "method": "kegg_alias"
+    },
+    "C00546": {
+      "modelseed_ids": [
+        "cpd00428"
+      ],
+      "primary": "cpd00428",
+      "method": "kegg_alias"
+    },
+    "C00552": {
+      "modelseed_ids": [
+        "cpd00432"
+      ],
+      "primary": "cpd00432",
+      "method": "kegg_alias"
+    },
+    "C00556": {
+      "modelseed_ids": [
+        "cpd00435"
+      ],
+      "primary": "cpd00435",
+      "method": "kegg_alias"
+    },
+    "C00558": {
+      "modelseed_ids": [
+        "cpd00437"
+      ],
+      "primary": "cpd00437",
+      "method": "kegg_alias"
+    },
+    "C00559": {
+      "modelseed_ids": [
+        "cpd00438"
+      ],
+      "primary": "cpd00438",
+      "method": "kegg_alias"
+    },
+    "C00570": {
+      "modelseed_ids": [
+        "cpd00444"
+      ],
+      "primary": "cpd00444",
+      "method": "kegg_alias"
+    },
+    "C00575": {
+      "modelseed_ids": [
+        "cpd00446"
+      ],
+      "primary": "cpd00446",
+      "method": "kegg_alias"
+    },
+    "C00577": {
+      "modelseed_ids": [
+        "cpd00448"
+      ],
+      "primary": "cpd00448",
+      "method": "kegg_alias"
+    },
+    "C00579": {
+      "modelseed_ids": [
+        "cpd00449"
+      ],
+      "primary": "cpd00449",
+      "method": "kegg_alias"
+    },
+    "C00580": {
+      "modelseed_ids": [
+        "cpd00450"
+      ],
+      "primary": "cpd00450",
+      "method": "kegg_alias"
+    },
+    "C00581": {
+      "modelseed_ids": [
+        "cpd00451"
+      ],
+      "primary": "cpd00451",
+      "method": "kegg_alias"
+    },
+    "C00583": {
+      "modelseed_ids": [
+        "cpd00453"
+      ],
+      "primary": "cpd00453",
+      "method": "kegg_alias"
+    },
+    "C00584": {
+      "modelseed_ids": [
+        "cpd00454"
+      ],
+      "primary": "cpd00454",
+      "method": "kegg_alias"
+    },
+    "C00588": {
+      "modelseed_ids": [
+        "cpd00457"
+      ],
+      "primary": "cpd00457",
+      "method": "kegg_alias"
+    },
+    "C00590": {
+      "modelseed_ids": [
+        "cpd00458"
+      ],
+      "primary": "cpd00458",
+      "method": "kegg_alias"
+    },
+    "C00599": {
+      "modelseed_ids": [
+        "cpd00463"
+      ],
+      "primary": "cpd00463",
+      "method": "kegg_alias"
+    },
+    "C00603": {
+      "modelseed_ids": [
+        "cpd00465"
+      ],
+      "primary": "cpd00465",
+      "method": "kegg_alias"
+    },
+    "C00617": {
+      "modelseed_ids": [
+        "cpd00472"
+      ],
+      "primary": "cpd00472",
+      "method": "kegg_alias"
+    },
+    "C00620": {
+      "modelseed_ids": [
+        "cpd00475"
+      ],
+      "primary": "cpd00475",
+      "method": "kegg_alias"
+    },
+    "C00624": {
+      "modelseed_ids": [
+        "cpd00477"
+      ],
+      "primary": "cpd00477",
+      "method": "kegg_alias"
+    },
+    "C00631": {
+      "modelseed_ids": [
+        "cpd00482"
+      ],
+      "primary": "cpd00482",
+      "method": "kegg_alias"
+    },
+    "C00636": {
+      "modelseed_ids": [
+        "cpd00485"
+      ],
+      "primary": "cpd00485",
+      "method": "kegg_alias"
+    },
+    "C00644": {
+      "modelseed_ids": [
+        "cpd27436"
+      ],
+      "primary": "cpd27436",
+      "method": "kegg_alias"
+    },
+    "C00645": {
+      "modelseed_ids": [
+        "cpd00492"
+      ],
+      "primary": "cpd00492",
+      "method": "kegg_alias"
+    },
+    "C00664": {
+      "modelseed_ids": [
+        "cpd00502"
+      ],
+      "primary": "cpd00502",
+      "method": "kegg_alias"
+    },
+    "C00666": {
+      "modelseed_ids": [
+        "cpd00504"
+      ],
+      "primary": "cpd00504",
+      "method": "kegg_alias"
+    },
+    "C00668": {
+      "modelseed_ids": [
+        "cpd19006"
+      ],
+      "primary": "cpd19006",
+      "method": "kegg_alias"
+    },
+    "C00672": {
+      "modelseed_ids": [
+        "cpd00509"
+      ],
+      "primary": "cpd00509",
+      "method": "kegg_alias"
+    },
+    "C00673": {
+      "modelseed_ids": [
+        "cpd00510"
+      ],
+      "primary": "cpd00510",
+      "method": "kegg_alias"
+    },
+    "C00680": {
+      "modelseed_ids": [
+        "cpd00516"
+      ],
+      "primary": "cpd00516",
+      "method": "kegg_alias"
+    },
+    "C00683": {
+      "modelseed_ids": [
+        "cpd00519"
+      ],
+      "primary": "cpd00519",
+      "method": "kegg_alias"
+    },
+    "C00684": {
+      "modelseed_ids": [
+        "cpd00520",
+        "cpd02386"
+      ],
+      "primary": "cpd00520",
+      "method": "kegg_alias"
+    },
+    "C00689": {
+      "modelseed_ids": [
+        "cpd00523"
+      ],
+      "primary": "cpd00523",
+      "method": "kegg_alias"
+    },
+    "C00704": {
+      "modelseed_ids": [
+        "cpd00532"
+      ],
+      "primary": "cpd00532",
+      "method": "kegg_alias"
+    },
+    "C00705": {
+      "modelseed_ids": [
+        "cpd00533"
+      ],
+      "primary": "cpd00533",
+      "method": "kegg_alias"
+    },
+    "C00713": {
+      "modelseed_ids": [
+        "cpd00537"
+      ],
+      "primary": "cpd00537",
+      "method": "kegg_alias"
+    },
+    "C00719": {
+      "modelseed_ids": [
+        "cpd00540"
+      ],
+      "primary": "cpd00540",
+      "method": "kegg_alias"
+    },
+    "C00725": {
+      "modelseed_ids": [
+        "cpd00541"
+      ],
+      "primary": "cpd00541",
+      "method": "kegg_alias"
+    },
+    "C00739": {
+      "modelseed_ids": [
+        "cpd00549"
+      ],
+      "primary": "cpd00549",
+      "method": "kegg_alias"
+    },
+    "C00740": {
+      "modelseed_ids": [
+        "cpd00550"
+      ],
+      "primary": "cpd00550",
+      "method": "kegg_alias"
+    },
+    "C00756": {
+      "modelseed_ids": [
+        "cpd00562"
+      ],
+      "primary": "cpd00562",
+      "method": "kegg_alias"
+    },
+    "C00785": {
+      "modelseed_ids": [
+        "cpd00581"
+      ],
+      "primary": "cpd00581",
+      "method": "kegg_alias"
+    },
+    "C00787": {
+      "modelseed_ids": [
+        "cpd11751"
+      ],
+      "primary": "cpd11751",
+      "method": "kegg_alias"
+    },
+    "C00794": {
+      "modelseed_ids": [
+        "cpd00588"
+      ],
+      "primary": "cpd00588",
+      "method": "kegg_alias"
+    },
+    "C00795": {
+      "modelseed_ids": [
+        "cpd00589"
+      ],
+      "primary": "cpd00589",
+      "method": "kegg_alias"
+    },
+    "C00798": {
+      "modelseed_ids": [
+        "cpd00592"
+      ],
+      "primary": "cpd00592",
+      "method": "kegg_alias"
+    },
+    "C00808": {
+      "modelseed_ids": [
+        "cpd00601"
+      ],
+      "primary": "cpd00601",
+      "method": "kegg_alias"
+    },
+    "C00810": {
+      "modelseed_ids": [
+        "cpd19008"
+      ],
+      "primary": "cpd19008",
+      "method": "kegg_alias"
+    },
+    "C00835": {
+      "modelseed_ids": [
+        "cpd00622"
+      ],
+      "primary": "cpd00622",
+      "method": "kegg_alias"
+    },
+    "C00842": {
+      "modelseed_ids": [
+        "cpd00626"
+      ],
+      "primary": "cpd00626",
+      "method": "kegg_alias"
+    },
+    "C00854": {
+      "modelseed_ids": [
+        "cpd00636"
+      ],
+      "primary": "cpd00636",
+      "method": "kegg_alias"
+    },
+    "C00861": {
+      "modelseed_ids": [
+        "cpd00642"
+      ],
+      "primary": "cpd00642",
+      "method": "kegg_alias"
+    },
+    "C00864": {
+      "modelseed_ids": [
+        "cpd00644"
+      ],
+      "primary": "cpd00644",
+      "method": "kegg_alias"
+    },
+    "C00870": {
+      "modelseed_ids": [
+        "cpd00646"
+      ],
+      "primary": "cpd00646",
+      "method": "kegg_alias"
+    },
+    "C00877": {
+      "modelseed_ids": [
+        "cpd00650"
+      ],
+      "primary": "cpd00650",
+      "method": "kegg_alias"
+    },
+    "C00882": {
+      "modelseed_ids": [
+        "cpd00655"
+      ],
+      "primary": "cpd00655",
+      "method": "kegg_alias"
+    },
+    "C00885": {
+      "modelseed_ids": [
+        "cpd00658"
+      ],
+      "primary": "cpd00658",
+      "method": "kegg_alias"
+    },
+    "C00905": {
+      "modelseed_ids": [
+        "cpd00672"
+      ],
+      "primary": "cpd00672",
+      "method": "kegg_alias"
+    },
+    "C00920": {
+      "modelseed_ids": [
+        "cpd00682"
+      ],
+      "primary": "cpd00682",
+      "method": "kegg_alias"
+    },
+    "C00922": {
+      "modelseed_ids": [
+        "cpd00684"
+      ],
+      "primary": "cpd00684",
+      "method": "kegg_alias"
+    },
+    "C00935": {
+      "modelseed_ids": [
+        "cpd00691"
+      ],
+      "primary": "cpd00691",
+      "method": "kegg_alias"
+    },
+    "C00940": {
+      "modelseed_ids": [
+        "cpd00695"
+      ],
+      "primary": "cpd00695",
+      "method": "kegg_alias"
+    },
+    "C00942": {
+      "modelseed_ids": [
+        "cpd00697"
+      ],
+      "primary": "cpd00697",
+      "method": "kegg_alias"
+    },
+    "C00943": {
+      "modelseed_ids": [
+        "cpd00698"
+      ],
+      "primary": "cpd00698",
+      "method": "kegg_alias"
+    },
+    "C00944": {
+      "modelseed_ids": [
+        "cpd00699"
+      ],
+      "primary": "cpd00699",
+      "method": "kegg_alias"
+    },
+    "C00951": {
+      "modelseed_ids": [
+        "cpd00702"
+      ],
+      "primary": "cpd00702",
+      "method": "kegg_alias"
+    },
+    "C00954": {
+      "modelseed_ids": [
+        "cpd00703"
+      ],
+      "primary": "cpd00703",
+      "method": "kegg_alias"
+    },
+    "C00956": {
+      "modelseed_ids": [
+        "cpd00705"
+      ],
+      "primary": "cpd00705",
+      "method": "kegg_alias"
+    },
+    "C00966": {
+      "modelseed_ids": [
+        "cpd00712"
+      ],
+      "primary": "cpd00712",
+      "method": "kegg_alias"
+    },
+    "C00968": {
+      "modelseed_ids": [
+        "cpd00713"
+      ],
+      "primary": "cpd00713",
+      "method": "kegg_alias"
+    },
+    "C00975": {
+      "modelseed_ids": [
+        "cpd00718"
+      ],
+      "primary": "cpd00718",
+      "method": "kegg_alias"
+    },
+    "C00979": {
+      "modelseed_ids": [
+        "cpd00722"
+      ],
+      "primary": "cpd00722",
+      "method": "kegg_alias"
+    },
+    "C00986": {
+      "modelseed_ids": [
+        "cpd00726"
+      ],
+      "primary": "cpd00726",
+      "method": "kegg_alias"
+    },
+    "C00989": {
+      "modelseed_ids": [
+        "cpd00728"
+      ],
+      "primary": "cpd00728",
+      "method": "kegg_alias"
+    },
+    "C01003": {
+      "modelseed_ids": [
+        "cpd11799"
+      ],
+      "primary": "cpd11799",
+      "method": "kegg_alias"
+    },
+    "C01005": {
+      "modelseed_ids": [
+        "cpd00738"
+      ],
+      "primary": "cpd00738",
+      "method": "kegg_alias"
+    },
+    "C01008": {
+      "modelseed_ids": [
+        "cpd00740"
+      ],
+      "primary": "cpd00740",
+      "method": "kegg_alias"
+    },
+    "C01013": {
+      "modelseed_ids": [
+        "cpd00745"
+      ],
+      "primary": "cpd00745",
+      "method": "kegg_alias"
+    },
+    "C01019": {
+      "modelseed_ids": [
+        "cpd00751",
+        "cpd27358"
+      ],
+      "primary": "cpd00751",
+      "method": "kegg_alias"
+    },
+    "C01026": {
+      "modelseed_ids": [
+        "cpd00756"
+      ],
+      "primary": "cpd00756",
+      "method": "kegg_alias"
+    },
+    "C01081": {
+      "modelseed_ids": [
+        "cpd00793"
+      ],
+      "primary": "cpd00793",
+      "method": "kegg_alias"
+    },
+    "C01083": {
+      "modelseed_ids": [
+        "cpd00794"
+      ],
+      "primary": "cpd00794",
+      "method": "kegg_alias"
+    },
+    "C01087": {
+      "modelseed_ids": [
+        "cpd00795"
+      ],
+      "primary": "cpd00795",
+      "method": "kegg_alias"
+    },
+    "C01089": {
+      "modelseed_ids": [
+        "cpd00797"
+      ],
+      "primary": "cpd00797",
+      "method": "kegg_alias"
+    },
+    "C01094": {
+      "modelseed_ids": [
+        "cpd00802"
+      ],
+      "primary": "cpd00802",
+      "method": "kegg_alias"
+    },
+    "C01096": {
+      "modelseed_ids": [
+        "cpd00491",
+        "cpd00804"
+      ],
+      "primary": "cpd00491",
+      "method": "kegg_alias"
+    },
+    "C01099": {
+      "modelseed_ids": [
+        "cpd00806"
+      ],
+      "primary": "cpd00806",
+      "method": "kegg_alias"
+    },
+    "C01100": {
+      "modelseed_ids": [
+        "cpd00807"
+      ],
+      "primary": "cpd00807",
+      "method": "kegg_alias"
+    },
+    "C01101": {
+      "modelseed_ids": [
+        "cpd00808"
+      ],
+      "primary": "cpd00808",
+      "method": "kegg_alias"
+    },
+    "C01103": {
+      "modelseed_ids": [
+        "cpd00810"
+      ],
+      "primary": "cpd00810",
+      "method": "kegg_alias"
+    },
+    "C01107": {
+      "modelseed_ids": [
+        "cpd00812"
+      ],
+      "primary": "cpd00812",
+      "method": "kegg_alias"
+    },
+    "C01112": {
+      "modelseed_ids": [
+        "cpd00817"
+      ],
+      "primary": "cpd00817",
+      "method": "kegg_alias"
+    },
+    "C01113": {
+      "modelseed_ids": [
+        "cpd00818"
+      ],
+      "primary": "cpd00818",
+      "method": "kegg_alias"
+    },
+    "C01127": {
+      "modelseed_ids": [
+        "cpd00830"
+      ],
+      "primary": "cpd00830",
+      "method": "kegg_alias"
+    },
+    "C01131": {
+      "modelseed_ids": [
+        "cpd00831"
+      ],
+      "primary": "cpd00831",
+      "method": "kegg_alias"
+    },
+    "C01142": {
+      "modelseed_ids": [
+        "cpd00840"
+      ],
+      "primary": "cpd00840",
+      "method": "kegg_alias"
+    },
+    "C01143": {
+      "modelseed_ids": [
+        "cpd00841"
+      ],
+      "primary": "cpd00841",
+      "method": "kegg_alias"
+    },
+    "C01144": {
+      "modelseed_ids": [
+        "cpd00842"
+      ],
+      "primary": "cpd00842",
+      "method": "kegg_alias"
+    },
+    "C01146": {
+      "modelseed_ids": [
+        "cpd00843"
+      ],
+      "primary": "cpd00843",
+      "method": "kegg_alias"
+    },
+    "C01157": {
+      "modelseed_ids": [
+        "cpd00851"
+      ],
+      "primary": "cpd00851",
+      "method": "kegg_alias"
+    },
+    "C01172": {
+      "modelseed_ids": [
+        "cpd00863"
+      ],
+      "primary": "cpd00863",
+      "method": "kegg_alias"
+    },
+    "C01175": {
+      "modelseed_ids": [
+        "cpd00865"
+      ],
+      "primary": "cpd00865",
+      "method": "kegg_alias"
+    },
+    "C01179": {
+      "modelseed_ids": [
+        "cpd00868"
+      ],
+      "primary": "cpd00868",
+      "method": "kegg_alias"
+    },
+    "C01182": {
+      "modelseed_ids": [
+        "cpd00871"
+      ],
+      "primary": "cpd00871",
+      "method": "kegg_alias"
+    },
+    "C01185": {
+      "modelseed_ids": [
+        "cpd00873"
+      ],
+      "primary": "cpd00873",
+      "method": "kegg_alias"
+    },
+    "C01186": {
+      "modelseed_ids": [
+        "cpd00874"
+      ],
+      "primary": "cpd00874",
+      "method": "kegg_alias"
+    },
+    "C01188": {
+      "modelseed_ids": [
+        "cpd00876"
+      ],
+      "primary": "cpd00876",
+      "method": "kegg_alias"
+    },
+    "C01194": {
+      "modelseed_ids": [
+        "cpd11715"
+      ],
+      "primary": "cpd11715",
+      "method": "kegg_alias"
+    },
+    "C01209": {
+      "modelseed_ids": [
+        "cpd11492"
+      ],
+      "primary": "cpd11492",
+      "method": "kegg_alias"
+    },
+    "C01213": {
+      "modelseed_ids": [
+        "cpd00891"
+      ],
+      "primary": "cpd00891",
+      "method": "kegg_alias"
+    },
+    "C01217": {
+      "modelseed_ids": [
+        "cpd00895"
+      ],
+      "primary": "cpd00895",
+      "method": "kegg_alias"
+    },
+    "C01231": {
+      "modelseed_ids": [
+        "cpd00499"
+      ],
+      "primary": "cpd00499",
+      "method": "kegg_alias"
+    },
+    "C01235": {
+      "modelseed_ids": [
+        "cpd00910"
+      ],
+      "primary": "cpd00910",
+      "method": "kegg_alias"
+    },
+    "C01236": {
+      "modelseed_ids": [
+        "cpd00911"
+      ],
+      "primary": "cpd00911",
+      "method": "kegg_alias"
+    },
+    "C01244": {
+      "modelseed_ids": [
+        "cpd00915"
+      ],
+      "primary": "cpd00915",
+      "method": "kegg_alias"
+    },
+    "C01267": {
+      "modelseed_ids": [
+        "cpd00930"
+      ],
+      "primary": "cpd00930",
+      "method": "kegg_alias"
+    },
+    "C01277": {
+      "modelseed_ids": [
+        "cpd11837"
+      ],
+      "primary": "cpd11837",
+      "method": "kegg_alias"
+    },
+    "C01281": {
+      "modelseed_ids": [
+        "cpd11838"
+      ],
+      "primary": "cpd11838",
+      "method": "kegg_alias"
+    },
+    "C01286": {
+      "modelseed_ids": [
+        "cpd00945"
+      ],
+      "primary": "cpd00945",
+      "method": "kegg_alias"
+    },
+    "C01299": {
+      "modelseed_ids": [
+        "cpd11841"
+      ],
+      "primary": "cpd11841",
+      "method": "kegg_alias"
+    },
+    "C01352": {
+      "modelseed_ids": [
+        "cpd00982"
+      ],
+      "primary": "cpd00982",
+      "method": "kegg_alias"
+    },
+    "C01367": {
+      "modelseed_ids": [
+        "cpd00988"
+      ],
+      "primary": "cpd00988",
+      "method": "kegg_alias"
+    },
+    "C01384": {
+      "modelseed_ids": [
+        "cpd00996"
+      ],
+      "primary": "cpd00996",
+      "method": "kegg_alias"
+    },
+    "C01412": {
+      "modelseed_ids": [
+        "cpd01011"
+      ],
+      "primary": "cpd01011",
+      "method": "kegg_alias"
+    },
+    "C01487": {
+      "modelseed_ids": [
+        "cpd01055"
+      ],
+      "primary": "cpd01055",
+      "method": "kegg_alias"
+    },
+    "C01507": {
+      "modelseed_ids": [
+        "cpd01066"
+      ],
+      "primary": "cpd01066",
+      "method": "kegg_alias"
+    },
+    "C01545": {
+      "modelseed_ids": [
+        "cpd01088"
+      ],
+      "primary": "cpd01088",
+      "method": "kegg_alias"
+    },
+    "C01551": {
+      "modelseed_ids": [
+        "cpd01092"
+      ],
+      "primary": "cpd01092",
+      "method": "kegg_alias"
+    },
+    "C01563": {
+      "modelseed_ids": [
+        "cpd01101"
+      ],
+      "primary": "cpd01101",
+      "method": "kegg_alias"
+    },
+    "C01570": {
+      "modelseed_ids": [
+        "cpd01106"
+      ],
+      "primary": "cpd01106",
+      "method": "kegg_alias"
+    },
+    "C01589": {
+      "modelseed_ids": [
+        "cpd01116"
+      ],
+      "primary": "cpd01116",
+      "method": "kegg_alias"
+    },
+    "C01595": {
+      "modelseed_ids": [
+        "cpd01122"
+      ],
+      "primary": "cpd01122",
+      "method": "kegg_alias"
+    },
+    "C01613": {
+      "modelseed_ids": [
+        "cpd01133"
+      ],
+      "primary": "cpd01133",
+      "method": "kegg_alias"
+    },
+    "C01620": {
+      "modelseed_ids": [
+        "cpd01138"
+      ],
+      "primary": "cpd01138",
+      "method": "kegg_alias"
+    },
+    "C01636": {
+      "modelseed_ids": [
+        "cpd11907"
+      ],
+      "primary": "cpd11907",
+      "method": "kegg_alias"
+    },
+    "C01643": {
+      "modelseed_ids": [
+        "cpd11914"
+      ],
+      "primary": "cpd11914",
+      "method": "kegg_alias"
+    },
+    "C01644": {
+      "modelseed_ids": [
+        "cpd11915"
+      ],
+      "primary": "cpd11915",
+      "method": "kegg_alias"
+    },
+    "C01646": {
+      "modelseed_ids": [
+        "cpd11917"
+      ],
+      "primary": "cpd11917",
+      "method": "kegg_alias"
+    },
+    "C01648": {
+      "modelseed_ids": [
+        "cpd11919"
+      ],
+      "primary": "cpd11919",
+      "method": "kegg_alias"
+    },
+    "C01650": {
+      "modelseed_ids": [
+        "cpd11921"
+      ],
+      "primary": "cpd11921",
+      "method": "kegg_alias"
+    },
+    "C01651": {
+      "modelseed_ids": [
+        "cpd11922"
+      ],
+      "primary": "cpd11922",
+      "method": "kegg_alias"
+    },
+    "C01653": {
+      "modelseed_ids": [
+        "cpd11924"
+      ],
+      "primary": "cpd11924",
+      "method": "kegg_alias"
+    },
+    "C01697": {
+      "modelseed_ids": [
+        "cpd01171"
+      ],
+      "primary": "cpd01171",
+      "method": "kegg_alias"
+    },
+    "C01721": {
+      "modelseed_ids": [
+        "cpd01186"
+      ],
+      "primary": "cpd01186",
+      "method": "kegg_alias"
+    },
+    "C01732": {
+      "modelseed_ids": [
+        "cpd01194"
+      ],
+      "primary": "cpd01194",
+      "method": "kegg_alias"
+    },
+    "C01742": {
+      "modelseed_ids": [
+        "cpd01200"
+      ],
+      "primary": "cpd01200",
+      "method": "kegg_alias"
+    },
+    "C01762": {
+      "modelseed_ids": [
+        "cpd01217"
+      ],
+      "primary": "cpd01217",
+      "method": "kegg_alias"
+    },
+    "C01796": {
+      "modelseed_ids": [
+        "cpd01239"
+      ],
+      "primary": "cpd01239",
+      "method": "kegg_alias"
+    },
+    "C01835": {
+      "modelseed_ids": [
+        "cpd01262"
+      ],
+      "primary": "cpd01262",
+      "method": "kegg_alias"
+    },
+    "C01845": {
+      "modelseed_ids": [
+        "cpd01269"
+      ],
+      "primary": "cpd01269",
+      "method": "kegg_alias"
+    },
+    "C01847": {
+      "modelseed_ids": [
+        "cpd01270"
+      ],
+      "primary": "cpd01270",
+      "method": "kegg_alias"
+    },
+    "C01882": {
+      "modelseed_ids": [
+        "cpd01296"
+      ],
+      "primary": "cpd01296",
+      "method": "kegg_alias"
+    },
+    "C01904": {
+      "modelseed_ids": [
+        "cpd01307"
+      ],
+      "primary": "cpd01307",
+      "method": "kegg_alias"
+    },
+    "C01931": {
+      "modelseed_ids": [
+        "cpd01326"
+      ],
+      "primary": "cpd01326",
+      "method": "kegg_alias"
+    },
+    "C01936": {
+      "modelseed_ids": [
+        "cpd01329"
+      ],
+      "primary": "cpd01329",
+      "method": "kegg_alias"
+    },
+    "C01959": {
+      "modelseed_ids": [
+        "cpd01345"
+      ],
+      "primary": "cpd01345",
+      "method": "kegg_alias"
+    },
+    "C01996": {
+      "modelseed_ids": [
+        "cpd01367"
+      ],
+      "primary": "cpd01367",
+      "method": "kegg_alias"
+    },
+    "C02022": {
+      "modelseed_ids": [
+        "cpd01383"
+      ],
+      "primary": "cpd01383",
+      "method": "kegg_alias"
+    },
+    "C02043": {
+      "modelseed_ids": [
+        "cpd01394"
+      ],
+      "primary": "cpd01394",
+      "method": "kegg_alias"
+    },
+    "C02045": {
+      "modelseed_ids": [
+        "cpd01395"
+      ],
+      "primary": "cpd01395",
+      "method": "kegg_alias"
+    },
+    "C02048": {
+      "modelseed_ids": [
+        "cpd01397"
+      ],
+      "primary": "cpd01397",
+      "method": "kegg_alias"
+    },
+    "C02052": {
+      "modelseed_ids": [
+        "cpd01399"
+      ],
+      "primary": "cpd01399",
+      "method": "kegg_alias"
+    },
+    "C02110": {
+      "modelseed_ids": [
+        "cpd01430"
+      ],
+      "primary": "cpd01430",
+      "method": "kegg_alias"
+    },
+    "C02115": {
+      "modelseed_ids": [
+        "cpd01432"
+      ],
+      "primary": "cpd01432",
+      "method": "kegg_alias"
+    },
+    "C02147": {
+      "modelseed_ids": [
+        "cpd01454"
+      ],
+      "primary": "cpd01454",
+      "method": "kegg_alias"
+    },
+    "C02160": {
+      "modelseed_ids": [
+        "cpd01461"
+      ],
+      "primary": "cpd01461",
+      "method": "kegg_alias"
+    },
+    "C02163": {
+      "modelseed_ids": [
+        "cpd12036"
+      ],
+      "primary": "cpd12036",
+      "method": "kegg_alias"
+    },
+    "C02181": {
+      "modelseed_ids": [
+        "cpd01472"
+      ],
+      "primary": "cpd01472",
+      "method": "kegg_alias"
+    },
+    "C02226": {
+      "modelseed_ids": [
+        "cpd01502"
+      ],
+      "primary": "cpd01502",
+      "method": "kegg_alias"
+    },
+    "C02237": {
+      "modelseed_ids": [
+        "cpd01512"
+      ],
+      "primary": "cpd01512",
+      "method": "kegg_alias"
+    },
+    "C02278": {
+      "modelseed_ids": [
+        "cpd01535"
+      ],
+      "primary": "cpd01535",
+      "method": "kegg_alias"
+    },
+    "C02280": {
+      "modelseed_ids": [
+        "cpd01536"
+      ],
+      "primary": "cpd01536",
+      "method": "kegg_alias"
+    },
+    "C02295": {
+      "modelseed_ids": [
+        "cpd01545"
+      ],
+      "primary": "cpd01545",
+      "method": "kegg_alias"
+    },
+    "C02305": {
+      "modelseed_ids": [
+        "cpd01550"
+      ],
+      "primary": "cpd01550",
+      "method": "kegg_alias"
+    },
+    "C02405": {
+      "modelseed_ids": [
+        "cpd01598"
+      ],
+      "primary": "cpd01598",
+      "method": "kegg_alias"
+    },
+    "C02466": {
+      "modelseed_ids": [
+        "cpd01622"
+      ],
+      "primary": "cpd01622",
+      "method": "kegg_alias"
+    },
+    "C02480": {
+      "modelseed_ids": [
+        "cpd01630"
+      ],
+      "primary": "cpd01630",
+      "method": "kegg_alias"
+    },
+    "C02553": {
+      "modelseed_ids": [
+        "cpd12132"
+      ],
+      "primary": "cpd12132",
+      "method": "kegg_alias"
+    },
+    "C02554": {
+      "modelseed_ids": [
+        "cpd12133"
+      ],
+      "primary": "cpd12133",
+      "method": "kegg_alias"
+    },
+    "C02557": {
+      "modelseed_ids": [
+        "cpd01675"
+      ],
+      "primary": "cpd01675",
+      "method": "kegg_alias"
+    },
+    "C02560": {
+      "modelseed_ids": [
+        "cpd01677"
+      ],
+      "primary": "cpd01677",
+      "method": "kegg_alias"
+    },
+    "C02571": {
+      "modelseed_ids": [
+        "cpd01682"
+      ],
+      "primary": "cpd01682",
+      "method": "kegg_alias"
+    },
+    "C02588": {
+      "modelseed_ids": [
+        "cpd01691"
+      ],
+      "primary": "cpd01691",
+      "method": "kegg_alias"
+    },
+    "C02595": {
+      "modelseed_ids": [
+        "cpd01696"
+      ],
+      "primary": "cpd01696",
+      "method": "kegg_alias"
+    },
+    "C02612": {
+      "modelseed_ids": [
+        "cpd01700"
+      ],
+      "primary": "cpd01700",
+      "method": "kegg_alias"
+    },
+    "C02614": {
+      "modelseed_ids": [
+        "cpd01701"
+      ],
+      "primary": "cpd01701",
+      "method": "kegg_alias"
+    },
+    "C02636": {
+      "modelseed_ids": [
+        "cpd01715"
+      ],
+      "primary": "cpd01715",
+      "method": "kegg_alias"
+    },
+    "C02637": {
+      "modelseed_ids": [
+        "cpd01716"
+      ],
+      "primary": "cpd01716",
+      "method": "kegg_alias"
+    },
+    "C02642": {
+      "modelseed_ids": [
+        "cpd01720"
+      ],
+      "primary": "cpd01720",
+      "method": "kegg_alias"
+    },
+    "C02652": {
+      "modelseed_ids": [
+        "cpd01725"
+      ],
+      "primary": "cpd01725",
+      "method": "kegg_alias"
+    },
+    "C02666": {
+      "modelseed_ids": [
+        "cpd01733"
+      ],
+      "primary": "cpd01733",
+      "method": "kegg_alias"
+    },
+    "C02679": {
+      "modelseed_ids": [
+        "cpd01741"
+      ],
+      "primary": "cpd01741",
+      "method": "kegg_alias"
+    },
+    "C02712": {
+      "modelseed_ids": [
+        "cpd01756"
+      ],
+      "primary": "cpd01756",
+      "method": "kegg_alias"
+    },
+    "C02718": {
+      "modelseed_ids": [
+        "cpd01762"
+      ],
+      "primary": "cpd01762",
+      "method": "kegg_alias"
+    },
+    "C02734": {
+      "modelseed_ids": [
+        "cpd01773"
+      ],
+      "primary": "cpd01773",
+      "method": "kegg_alias"
+    },
+    "C02763": {
+      "modelseed_ids": [
+        "cpd01784"
+      ],
+      "primary": "cpd01784",
+      "method": "kegg_alias"
+    },
+    "C02780": {
+      "modelseed_ids": [
+        "cpd01793"
+      ],
+      "primary": "cpd01793",
+      "method": "kegg_alias"
+    },
+    "C02782": {
+      "modelseed_ids": [
+        "cpd01795"
+      ],
+      "primary": "cpd01795",
+      "method": "kegg_alias"
+    },
+    "C02798": {
+      "modelseed_ids": [
+        "cpd01807"
+      ],
+      "primary": "cpd01807",
+      "method": "kegg_alias"
+    },
+    "C02839": {
+      "modelseed_ids": [
+        "cpd12194"
+      ],
+      "primary": "cpd12194",
+      "method": "kegg_alias"
+    },
+    "C02930": {
+      "modelseed_ids": [
+        "cpd01876"
+      ],
+      "primary": "cpd01876",
+      "method": "kegg_alias"
+    },
+    "C02938": {
+      "modelseed_ids": [
+        "cpd01881"
+      ],
+      "primary": "cpd01881",
+      "method": "kegg_alias"
+    },
+    "C02953": {
+      "modelseed_ids": [
+        "cpd01895"
+      ],
+      "primary": "cpd01895",
+      "method": "kegg_alias"
+    },
+    "C02954": {
+      "modelseed_ids": [
+        "cpd01896"
+      ],
+      "primary": "cpd01896",
+      "method": "kegg_alias"
+    },
+    "C02988": {
+      "modelseed_ids": [
+        "cpd12228"
+      ],
+      "primary": "cpd12228",
+      "method": "kegg_alias"
+    },
+    "C02990": {
+      "modelseed_ids": [
+        "cpd01915"
+      ],
+      "primary": "cpd01915",
+      "method": "kegg_alias"
+    },
+    "C02992": {
+      "modelseed_ids": [
+        "cpd12229"
+      ],
+      "primary": "cpd12229",
+      "method": "kegg_alias"
+    },
+    "C03017": {
+      "modelseed_ids": [
+        "cpd01934"
+      ],
+      "primary": "cpd01934",
+      "method": "kegg_alias"
+    },
+    "C03044": {
+      "modelseed_ids": [
+        "cpd01947"
+      ],
+      "primary": "cpd01947",
+      "method": "kegg_alias"
+    },
+    "C03059": {
+      "modelseed_ids": [
+        "cpd01958"
+      ],
+      "primary": "cpd01958",
+      "method": "kegg_alias"
+    },
+    "C03064": {
+      "modelseed_ids": [
+        "cpd01961"
+      ],
+      "primary": "cpd01961",
+      "method": "kegg_alias"
+    },
+    "C03067": {
+      "modelseed_ids": [
+        "cpd01964"
+      ],
+      "primary": "cpd01964",
+      "method": "kegg_alias"
+    },
+    "C03082": {
+      "modelseed_ids": [
+        "cpd01977"
+      ],
+      "primary": "cpd01977",
+      "method": "kegg_alias"
+    },
+    "C03127": {
+      "modelseed_ids": [
+        "cpd12256"
+      ],
+      "primary": "cpd12256",
+      "method": "kegg_alias"
+    },
+    "C03149": {
+      "modelseed_ids": [
+        "cpd02015"
+      ],
+      "primary": "cpd02015",
+      "method": "kegg_alias"
+    },
+    "C03150": {
+      "modelseed_ids": [
+        "cpd02016"
+      ],
+      "primary": "cpd02016",
+      "method": "kegg_alias"
+    },
+    "C03166": {
+      "modelseed_ids": [
+        "cpd02023"
+      ],
+      "primary": "cpd02023",
+      "method": "kegg_alias"
+    },
+    "C03167": {
+      "modelseed_ids": [
+        "cpd02024"
+      ],
+      "primary": "cpd02024",
+      "method": "kegg_alias"
+    },
+    "C03173": {
+      "modelseed_ids": [
+        "cpd02028"
+      ],
+      "primary": "cpd02028",
+      "method": "kegg_alias"
+    },
+    "C03178": {
+      "modelseed_ids": [
+        "cpd02033"
+      ],
+      "primary": "cpd02033",
+      "method": "kegg_alias"
+    },
+    "C03210": {
+      "modelseed_ids": [
+        "cpd02051"
+      ],
+      "primary": "cpd02051",
+      "method": "kegg_alias"
+    },
+    "C03232": {
+      "modelseed_ids": [
+        "cpd02069"
+      ],
+      "primary": "cpd02069",
+      "method": "kegg_alias"
+    },
+    "C03314": {
+      "modelseed_ids": [
+        "cpd02112"
+      ],
+      "primary": "cpd02112",
+      "method": "kegg_alias"
+    },
+    "C03341": {
+      "modelseed_ids": [
+        "cpd02121"
+      ],
+      "primary": "cpd02121",
+      "method": "kegg_alias"
+    },
+    "C03351": {
+      "modelseed_ids": [
+        "cpd02129"
+      ],
+      "primary": "cpd02129",
+      "method": "kegg_alias"
+    },
+    "C03360": {
+      "modelseed_ids": [
+        "cpd02135"
+      ],
+      "primary": "cpd02135",
+      "method": "kegg_alias"
+    },
+    "C03373": {
+      "modelseed_ids": [
+        "cpd02140"
+      ],
+      "primary": "cpd02140",
+      "method": "kegg_alias"
+    },
+    "C03383": {
+      "modelseed_ids": [
+        "cpd02143"
+      ],
+      "primary": "cpd02143",
+      "method": "kegg_alias"
+    },
+    "C03384": {
+      "modelseed_ids": [
+        "cpd19025"
+      ],
+      "primary": "cpd19025",
+      "method": "kegg_alias"
+    },
+    "C03392": {
+      "modelseed_ids": [
+        "cpd02146"
+      ],
+      "primary": "cpd02146",
+      "method": "kegg_alias"
+    },
+    "C03394": {
+      "modelseed_ids": [
+        "cpd02148"
+      ],
+      "primary": "cpd02148",
+      "method": "kegg_alias"
+    },
+    "C03406": {
+      "modelseed_ids": [
+        "cpd02152"
+      ],
+      "primary": "cpd02152",
+      "method": "kegg_alias"
+    },
+    "C03410": {
+      "modelseed_ids": [
+        "cpd02155"
+      ],
+      "primary": "cpd02155",
+      "method": "kegg_alias"
+    },
+    "C03440": {
+      "modelseed_ids": [
+        "cpd02175"
+      ],
+      "primary": "cpd02175",
+      "method": "kegg_alias"
+    },
+    "C03448": {
+      "modelseed_ids": [
+        "cpd02180"
+      ],
+      "primary": "cpd02180",
+      "method": "kegg_alias"
+    },
+    "C03451": {
+      "modelseed_ids": [
+        "cpd02182"
+      ],
+      "primary": "cpd02182",
+      "method": "kegg_alias"
+    },
+    "C03459": {
+      "modelseed_ids": [
+        "cpd02186"
+      ],
+      "primary": "cpd02186",
+      "method": "kegg_alias"
+    },
+    "C03483": {
+      "modelseed_ids": [
+        "cpd02198"
+      ],
+      "primary": "cpd02198",
+      "method": "kegg_alias"
+    },
+    "C03493": {
+      "modelseed_ids": [
+        "cpd02202"
+      ],
+      "primary": "cpd02202",
+      "method": "kegg_alias"
+    },
+    "C03506": {
+      "modelseed_ids": [
+        "cpd02210"
+      ],
+      "primary": "cpd02210",
+      "method": "kegg_alias"
+    },
+    "C03511": {
+      "modelseed_ids": [
+        "cpd12335"
+      ],
+      "primary": "cpd12335",
+      "method": "kegg_alias"
+    },
+    "C03519": {
+      "modelseed_ids": [
+        "cpd02218"
+      ],
+      "primary": "cpd02218",
+      "method": "kegg_alias"
+    },
+    "C03521": {
+      "modelseed_ids": [
+        "cpd02219"
+      ],
+      "primary": "cpd02219",
+      "method": "kegg_alias"
+    },
+    "C03557": {
+      "modelseed_ids": [
+        "cpd02233"
+      ],
+      "primary": "cpd02233",
+      "method": "kegg_alias"
+    },
+    "C03561": {
+      "modelseed_ids": [
+        "cpd02234"
+      ],
+      "primary": "cpd02234",
+      "method": "kegg_alias"
+    },
+    "C03564": {
+      "modelseed_ids": [
+        "cpd02235",
+        "cpd26844"
+      ],
+      "primary": "cpd02235",
+      "method": "kegg_alias"
+    },
+    "C03598": {
+      "modelseed_ids": [
+        "cpd02264"
+      ],
+      "primary": "cpd02264",
+      "method": "kegg_alias"
+    },
+    "C03599": {
+      "modelseed_ids": [
+        "cpd02265"
+      ],
+      "primary": "cpd02265",
+      "method": "kegg_alias"
+    },
+    "C03618": {
+      "modelseed_ids": [
+        "cpd02273"
+      ],
+      "primary": "cpd02273",
+      "method": "kegg_alias"
+    },
+    "C03652": {
+      "modelseed_ids": [
+        "cpd01705"
+      ],
+      "primary": "cpd01705",
+      "method": "kegg_alias"
+    },
+    "C03656": {
+      "modelseed_ids": [
+        "cpd02294"
+      ],
+      "primary": "cpd02294",
+      "method": "kegg_alias"
+    },
+    "C03680": {
+      "modelseed_ids": [
+        "cpd02311"
+      ],
+      "primary": "cpd02311",
+      "method": "kegg_alias"
+    },
+    "C03688": {
+      "modelseed_ids": [
+        "cpd12370"
+      ],
+      "primary": "cpd12370",
+      "method": "kegg_alias"
+    },
+    "C03703": {
+      "modelseed_ids": [
+        "cpd02324"
+      ],
+      "primary": "cpd02324",
+      "method": "kegg_alias"
+    },
+    "C03794": {
+      "modelseed_ids": [
+        "cpd02375"
+      ],
+      "primary": "cpd02375",
+      "method": "kegg_alias"
+    },
+    "C03875": {
+      "modelseed_ids": [
+        "cpd12412"
+      ],
+      "primary": "cpd12412",
+      "method": "kegg_alias"
+    },
+    "C03912": {
+      "modelseed_ids": [
+        "cpd02431"
+      ],
+      "primary": "cpd02431",
+      "method": "kegg_alias"
+    },
+    "C03926": {
+      "modelseed_ids": [
+        "cpd02441"
+      ],
+      "primary": "cpd02441",
+      "method": "kegg_alias"
+    },
+    "C03939": {
+      "modelseed_ids": [
+        "cpd11494"
+      ],
+      "primary": "cpd11494",
+      "method": "kegg_alias"
+    },
+    "C03943": {
+      "modelseed_ids": [
+        "cpd02448"
+      ],
+      "primary": "cpd02448",
+      "method": "kegg_alias"
+    },
+    "C03981": {
+      "modelseed_ids": [
+        "cpd02469"
+      ],
+      "primary": "cpd02469",
+      "method": "kegg_alias"
+    },
+    "C04056": {
+      "modelseed_ids": [
+        "cpd02510"
+      ],
+      "primary": "cpd02510",
+      "method": "kegg_alias"
+    },
+    "C04092": {
+      "modelseed_ids": [
+        "cpd00922"
+      ],
+      "primary": "cpd00922",
+      "method": "kegg_alias"
+    },
+    "C04105": {
+      "modelseed_ids": [
+        "cpd02536"
+      ],
+      "primary": "cpd02536",
+      "method": "kegg_alias"
+    },
+    "C04114": {
+      "modelseed_ids": [
+        "cpd02543"
+      ],
+      "primary": "cpd02543",
+      "method": "kegg_alias"
+    },
+    "C04137": {
+      "modelseed_ids": [
+        "cpd02553"
+      ],
+      "primary": "cpd02553",
+      "method": "kegg_alias"
+    },
+    "C04188": {
+      "modelseed_ids": [
+        "cpd02574"
+      ],
+      "primary": "cpd02574",
+      "method": "kegg_alias"
+    },
+    "C04246": {
+      "modelseed_ids": [
+        "cpd11465"
+      ],
+      "primary": "cpd11465",
+      "method": "kegg_alias"
+    },
+    "C04256": {
+      "modelseed_ids": [
+        "cpd02611"
+      ],
+      "primary": "cpd02611",
+      "method": "kegg_alias"
+    },
+    "C04257": {
+      "modelseed_ids": [
+        "cpd02612"
+      ],
+      "primary": "cpd02612",
+      "method": "kegg_alias"
+    },
+    "C04268": {
+      "modelseed_ids": [
+        "cpd02616"
+      ],
+      "primary": "cpd02616",
+      "method": "kegg_alias"
+    },
+    "C04327": {
+      "modelseed_ids": [
+        "cpd02654"
+      ],
+      "primary": "cpd02654",
+      "method": "kegg_alias"
+    },
+    "C04348": {
+      "modelseed_ids": [
+        "cpd02662"
+      ],
+      "primary": "cpd02662",
+      "method": "kegg_alias"
+    },
+    "C04367": {
+      "modelseed_ids": [
+        "cpd02673"
+      ],
+      "primary": "cpd02673",
+      "method": "kegg_alias"
+    },
+    "C04377": {
+      "modelseed_ids": [
+        "cpd02679"
+      ],
+      "primary": "cpd02679",
+      "method": "kegg_alias"
+    },
+    "C04421": {
+      "modelseed_ids": [
+        "cpd02698"
+      ],
+      "primary": "cpd02698",
+      "method": "kegg_alias"
+    },
+    "C04442": {
+      "modelseed_ids": [
+        "cpd02711"
+      ],
+      "primary": "cpd02711",
+      "method": "kegg_alias"
+    },
+    "C04462": {
+      "modelseed_ids": [
+        "cpd02724"
+      ],
+      "primary": "cpd02724",
+      "method": "kegg_alias"
+    },
+    "C04618": {
+      "modelseed_ids": [
+        "cpd11478"
+      ],
+      "primary": "cpd11478",
+      "method": "kegg_alias"
+    },
+    "C04654": {
+      "modelseed_ids": [
+        "cpd02836"
+      ],
+      "primary": "cpd02836",
+      "method": "kegg_alias"
+    },
+    "C04677": {
+      "modelseed_ids": [
+        "cpd02851"
+      ],
+      "primary": "cpd02851",
+      "method": "kegg_alias"
+    },
+    "C04688": {
+      "modelseed_ids": [
+        "cpd11484"
+      ],
+      "primary": "cpd11484",
+      "method": "kegg_alias"
+    },
+    "C04691": {
+      "modelseed_ids": [
+        "cpd02857"
+      ],
+      "primary": "cpd02857",
+      "method": "kegg_alias"
+    },
+    "C04707": {
+      "modelseed_ids": [
+        "cpd02865"
+      ],
+      "primary": "cpd02865",
+      "method": "kegg_alias"
+    },
+    "C04734": {
+      "modelseed_ids": [
+        "cpd02884"
+      ],
+      "primary": "cpd02884",
+      "method": "kegg_alias"
+    },
+    "C04738": {
+      "modelseed_ids": [
+        "cpd02886"
+      ],
+      "primary": "cpd02886",
+      "method": "kegg_alias"
+    },
+    "C04741": {
+      "modelseed_ids": [
+        "cpd02889"
+      ],
+      "primary": "cpd02889",
+      "method": "kegg_alias"
+    },
+    "C04751": {
+      "modelseed_ids": [
+        "cpd02893"
+      ],
+      "primary": "cpd02893",
+      "method": "kegg_alias"
+    },
+    "C04752": {
+      "modelseed_ids": [
+        "cpd02894"
+      ],
+      "primary": "cpd02894",
+      "method": "kegg_alias"
+    },
+    "C04823": {
+      "modelseed_ids": [
+        "cpd02921",
+        "cpd19032"
+      ],
+      "primary": "cpd02921",
+      "method": "kegg_alias"
+    },
+    "C05268": {
+      "modelseed_ids": [
+        "cpd03122"
+      ],
+      "primary": "cpd03122",
+      "method": "kegg_alias"
+    },
+    "C05269": {
+      "modelseed_ids": [
+        "cpd03123"
+      ],
+      "primary": "cpd03123",
+      "method": "kegg_alias"
+    },
+    "C05271": {
+      "modelseed_ids": [
+        "cpd03125"
+      ],
+      "primary": "cpd03125",
+      "method": "kegg_alias"
+    },
+    "C05382": {
+      "modelseed_ids": [
+        "cpd00238"
+      ],
+      "primary": "cpd00238",
+      "method": "kegg_alias"
+    },
+    "C05385": {
+      "modelseed_ids": [
+        "cpd00880"
+      ],
+      "primary": "cpd00880",
+      "method": "kegg_alias"
+    },
+    "C05402": {
+      "modelseed_ids": [
+        "cpd03198"
+      ],
+      "primary": "cpd03198",
+      "method": "kegg_alias"
+    },
+    "C05403": {
+      "modelseed_ids": [
+        "cpd03199"
+      ],
+      "primary": "cpd03199",
+      "method": "kegg_alias"
+    },
+    "C05437": {
+      "modelseed_ids": [
+        "cpd03221"
+      ],
+      "primary": "cpd03221",
+      "method": "kegg_alias"
+    },
+    "C05439": {
+      "modelseed_ids": [
+        "cpd03222"
+      ],
+      "primary": "cpd03222",
+      "method": "kegg_alias"
+    },
+    "C05512": {
+      "modelseed_ids": [
+        "cpd03279"
+      ],
+      "primary": "cpd03279",
+      "method": "kegg_alias"
+    },
+    "C05551": {
+      "modelseed_ids": [
+        "cpd03292"
+      ],
+      "primary": "cpd03292",
+      "method": "kegg_alias"
+    },
+    "C05598": {
+      "modelseed_ids": [
+        "cpd03325"
+      ],
+      "primary": "cpd03325",
+      "method": "kegg_alias"
+    },
+    "C05662": {
+      "modelseed_ids": [
+        "cpd03372"
+      ],
+      "primary": "cpd03372",
+      "method": "kegg_alias"
+    },
+    "C05665": {
+      "modelseed_ids": [
+        "cpd01504"
+      ],
+      "primary": "cpd01504",
+      "method": "kegg_alias"
+    },
+    "C05922": {
+      "modelseed_ids": [
+        "cpd03518"
+      ],
+      "primary": "cpd03518",
+      "method": "kegg_alias"
+    },
+    "C05945": {
+      "modelseed_ids": [
+        "cpd03535"
+      ],
+      "primary": "cpd03535",
+      "method": "kegg_alias"
+    },
+    "C05979": {
+      "modelseed_ids": [
+        "cpd03559"
+      ],
+      "primary": "cpd03559",
+      "method": "kegg_alias"
+    },
+    "C05984": {
+      "modelseed_ids": [
+        "cpd03561"
+      ],
+      "primary": "cpd03561",
+      "method": "kegg_alias"
+    },
+    "C06019": {
+      "modelseed_ids": [
+        "cpd03583"
+      ],
+      "primary": "cpd03583",
+      "method": "kegg_alias"
+    },
+    "C06020": {
+      "modelseed_ids": [
+        "cpd12809"
+      ],
+      "primary": "cpd12809",
+      "method": "kegg_alias"
+    },
+    "C06021": {
+      "modelseed_ids": [
+        "cpd12810"
+      ],
+      "primary": "cpd12810",
+      "method": "kegg_alias"
+    },
+    "C06142": {
+      "modelseed_ids": [
+        "cpd03662"
+      ],
+      "primary": "cpd03662",
+      "method": "kegg_alias"
+    },
+    "C06156": {
+      "modelseed_ids": [
+        "cpd03671"
+      ],
+      "primary": "cpd03671",
+      "method": "kegg_alias"
+    },
+    "C06159": {
+      "modelseed_ids": [
+        "cpd03674"
+      ],
+      "primary": "cpd03674",
+      "method": "kegg_alias"
+    },
+    "C06219": {
+      "modelseed_ids": [
+        "cpd03721"
+      ],
+      "primary": "cpd03721",
+      "method": "kegg_alias"
+    },
+    "C06255": {
+      "modelseed_ids": [
+        "cpd03737"
+      ],
+      "primary": "cpd03737",
+      "method": "kegg_alias"
+    },
+    "C06322": {
+      "modelseed_ids": [
+        "cpd03763"
+      ],
+      "primary": "cpd03763",
+      "method": "kegg_alias"
+    },
+    "C06463": {
+      "modelseed_ids": [
+        "cpd03879"
+      ],
+      "primary": "cpd03879",
+      "method": "kegg_alias"
+    },
+    "C06464": {
+      "modelseed_ids": [
+        "cpd03880"
+      ],
+      "primary": "cpd03880",
+      "method": "kegg_alias"
+    },
+    "C06468": {
+      "modelseed_ids": [
+        "cpd03884"
+      ],
+      "primary": "cpd03884",
+      "method": "kegg_alias"
+    },
+    "C06473": {
+      "modelseed_ids": [
+        "cpd00480"
+      ],
+      "primary": "cpd00480",
+      "method": "kegg_alias"
+    },
+    "C06567": {
+      "modelseed_ids": [
+        "cpd12884"
+      ],
+      "primary": "cpd12884",
+      "method": "kegg_alias"
+    },
+    "C06749": {
+      "modelseed_ids": [
+        "cpd04130"
+      ],
+      "primary": "cpd04130",
+      "method": "kegg_alias"
+    },
+    "C06827": {
+      "modelseed_ids": [
+        "cpd04194"
+      ],
+      "primary": "cpd04194",
+      "method": "kegg_alias"
+    },
+    "C07064": {
+      "modelseed_ids": [
+        "cpd04349"
+      ],
+      "primary": "cpd04349",
+      "method": "kegg_alias"
+    },
+    "C07086": {
+      "modelseed_ids": [
+        "cpd19069"
+      ],
+      "primary": "cpd19069",
+      "method": "kegg_alias"
+    },
+    "C07756": {
+      "modelseed_ids": [
+        "cpd04878"
+      ],
+      "primary": "cpd04878",
+      "method": "kegg_alias"
+    },
+    "C07761": {
+      "modelseed_ids": [
+        "cpd04882"
+      ],
+      "primary": "cpd04882",
+      "method": "kegg_alias"
+    },
+    "C08126": {
+      "modelseed_ids": [
+        "cpd05095"
+      ],
+      "primary": "cpd05095",
+      "method": "kegg_alias"
+    },
+    "C08240": {
+      "modelseed_ids": [
+        "cpd05158"
+      ],
+      "primary": "cpd05158",
+      "method": "kegg_alias"
+    },
+    "C08492": {
+      "modelseed_ids": [
+        "cpd05400"
+      ],
+      "primary": "cpd05400",
+      "method": "kegg_alias"
+    },
+    "C09814": {
+      "modelseed_ids": [
+        "cpd06706"
+      ],
+      "primary": "cpd06706",
+      "method": "kegg_alias"
+    },
+    "C11355": {
+      "modelseed_ids": [
+        "cpd08210"
+      ],
+      "primary": "cpd08210",
+      "method": "kegg_alias"
+    },
+    "C11695": {
+      "modelseed_ids": [
+        "cpd08505"
+      ],
+      "primary": "cpd08505",
+      "method": "kegg_alias"
+    },
+    "C11907": {
+      "modelseed_ids": [
+        "cpd00521"
+      ],
+      "primary": "cpd00521",
+      "method": "kegg_alias"
+    },
+    "C14177": {
+      "modelseed_ids": [
+        "cpd09876"
+      ],
+      "primary": "cpd09876",
+      "method": "kegg_alias"
+    },
+    "C14178": {
+      "modelseed_ids": [
+        "cpd09877"
+      ],
+      "primary": "cpd09877",
+      "method": "kegg_alias"
+    },
+    "C15025": {
+      "modelseed_ids": [
+        "cpd10719"
+      ],
+      "primary": "cpd10719",
+      "method": "kegg_alias"
+    },
+    "C15673": {
+      "modelseed_ids": [
+        "cpd11314"
+      ],
+      "primary": "cpd11314",
+      "method": "kegg_alias"
+    },
+    "C16074": {
+      "modelseed_ids": [
+        "cpd14795"
+      ],
+      "primary": "cpd14795",
+      "method": "kegg_alias"
+    },
+    "C16310": {
+      "modelseed_ids": [
+        "cpd15026"
+      ],
+      "primary": "cpd15026",
+      "method": "kegg_alias"
+    },
+    "C16512": {
+      "modelseed_ids": [
+        "cpd16300"
+      ],
+      "primary": "cpd16300",
+      "method": "kegg_alias"
+    },
+    "C16688": {
+      "modelseed_ids": [
+        "cpd19187"
+      ],
+      "primary": "cpd19187",
+      "method": "kegg_alias"
+    },
+    "C18054": {
+      "modelseed_ids": [
+        "cpd17073"
+      ],
+      "primary": "cpd17073",
+      "method": "kegg_alias"
+    },
+    "C19636": {
+      "modelseed_ids": [
+        "cpd20885"
+      ],
+      "primary": "cpd20885",
+      "method": "kegg_alias"
+    },
+    "C19838": {
+      "modelseed_ids": [
+        "cpd21080"
+      ],
+      "primary": "cpd21080",
+      "method": "kegg_alias"
+    },
+    "C80057": {
+      "modelseed_ids": [
+        "cpd26025"
+      ],
+      "primary": "cpd26025",
+      "method": "inchikey_first_block",
+      "name": "ap-NAD",
+      "inchikey": "KPVQNXLUPNWQHM-UHFFFAOYSA-O"
+    },
+    "C80058": {
+      "modelseed_ids": [
+        "cpd26321"
+      ],
+      "primary": "cpd26321",
+      "method": "inchikey_first_block",
+      "name": "ap-NADH",
+      "inchikey": "CIWXCGUGRDQCHH-UHFFFAOYSA-N"
+    },
+    "C80069": {
+      "modelseed_ids": [],
+      "primary": null,
+      "method": "unmapped",
+      "name": "S-aminomethyldihydro--lipoate",
+      "inchi": "InChI=1S/C9H19NO2S2/c10-7-14-6-5-8(13)3-1-2-4-9(11)12/h8,13H,1-7,10H2,(H,11,12)",
+      "inchikey": "YNZQCBXDUUGFIX-UHFFFAOYSA-N"
+    }
+  }
+}
